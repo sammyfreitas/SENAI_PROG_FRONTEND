@@ -1,0 +1,53 @@
+13/11/23
+TQS - TENHO QUE SABER:
+-------------------------
+QUANDO CRIAR UM HIPERLINK
+TARGET="_BLANK" - Significa que o hiperlink criado vai para uma página nova.
+
+<a href="https://www.nba.com/warriors" target="_blank">Golden State Warriors</a>
+
+Clique aqui para me mandar um email
+<a href="mailto:contato@lucasgabrieldesigner.com">E-mail</a>
+
+Quando colocar um ponto de interrogação após o endereço de email e acrescentar a palavara 'subject=' é suficiente para determinar o assunto do email que será enviado.
+<a href="mailto:contato@lucasgabrieldesigner.com?subject=Informações do Site">E-mail</a>
+
+
+Clique aqui para falar no whatsapp
+<a href="https://wa.me/55+21975287327>Whatsapp</a>
+
+
+Como colocar uma imagem:
+<img src="./Imagens/whatsapp.jpg">
+<img src="https:\\xxxxxxx.jpg">
+(source)
+
+
+Pasta Padrão:
+index.html
+/Imagens
+/css
+/js
+
+
+<html>
+	<body>
+		<a href="https://wa.me/55+21975287327><img src="./Imagens/whatsapp.jpg></a>
+	</body>
+</html>
+
+Colocar na parte superior
+Foto do lado ou em cima do nome
+<hr>
+TEXTO
+<h1 text-align="center>
+<HR>
+Colocar no fim da página: 
+
+Contato
+<a href>Email</a>
+Whatsapp 
+Instagram
+Github
+<HR> Todos os direitos....
+

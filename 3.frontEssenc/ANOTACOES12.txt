@@ -1,0 +1,14 @@
+DESAFIOS DE FRONT-END
+https://www.frontendmentor.io/
+
+TAGS - são todos os comandos que você manda para o html dentro dos símbolos de < >
+
+<html>
+</html> 
+
+
+Toda página deverá ter head, body, footer
+
+A página principal é a 'INDEX.HTML'
+-------------------------------------
+Localmente pode ter qualquer nome, porém ao hospedar sua página, a página principal (home) deverá se chamar 'index.html'

@@ -1,0 +1,47 @@
+23/11/23
+-----------------
+TRABALHO PARA SEGUNDA-FEIRA:
+
+1. AJUSTAR A HOME-PAGE 'INDEX.HTML'
+	a) Escrever 3 parágrafos sobre o curso que estão fazendo de Programador Front-End
+	b) Criar hiperlink para HTML, CSS, JavaScript e React que estão no menu lateral esquerdo
+	c) Alterar o rodapé para "Desenvolvido por "Aluno Fulano de Tal"
+	
+2. Copiar e colar para as páginas:
+	a) Projetos 
+		Projeto 01 - Página Brasileirão (hiperlink)
+			Primeira one page criada com uso de tabelas.
+			Competências: HTML
+		Projeto 02 - Home-Page de um Negócio Local (Salão de Beleza, Loja de Donuts, Mecânico de Moto, Bicicletaria, Banca de Jornal)
+			One page com uso de tabelas ou divs
+			Competências: HTML, CSS
+		Projeto 03 - Home-Page empreendimento do aluno
+			One page com uso divs
+			Competências: HTML, CSS
+		Projeto 04 - Calculadora
+			One page de Calculadora (funções simples, soma subtração, multiplicação e divisão, botão para limpar e apagar)
+			Competências: HTML, CSS, JavaScript
+		Projeto 05 - Calculadora IMC
+			One page de Calculadora (cálculo do IMC, validação de campos e orientações para o usuário)
+			Competências: HTML, CSS, JavaScript
+		Projeto 06 - Conversor de Moedas
+			One page Conversor de Moedas (real para euro, dolar, iene, libra e peso argentino)
+			Competências: HTML, CSS, JavaScript
+		Projeto 07 - Landing Page com React
+			Landing page / One Page
+			Competências: HTML, CSS, React
+	b) Curriculo
+		Formação, experiência, interesses
+	c) Sobre
+		Um pouco sobre vocês (3 parágrafos, hobbies)
+	d) Contato
+		Redes sociais 
+		Ponto extra para um mini-formulário ("nome, e-mail, telefone e uma caixa para a pessoa escrever, botão enviar para email")
+	
+	------------------------
+	
+	padding = é a 'borda' invisível que mantém o elemento separado dos outros elementos.
+	
+	margin-top, margin-botton, margin-left e margin-rigth são a 'borda' que separa da página.
+	
+	o que determina o tamanho de um elemento ou imagem ou div é weight e height (altura e largura)

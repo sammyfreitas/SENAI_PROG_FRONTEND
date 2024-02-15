@@ -1,0 +1,18 @@
+22/11/23
+------------------------------------------------
+PROJ_INTEG - PROJETO INTEGRADOR
+------------------------------------------------
+NA PAGINA INDEX
+TEM UM MENU COM 5 LINKS:
+HOME - index.html
+Projetos
+Curriculo
+Sobre
+Contato
+------------------------------------------------
+Projetos - projetos.html
+Curriculo - curriculo.html
+Sobre - sobre.html
+Contato - contato.htm
+------------------------------------------------
+Criar uma pasta chamada 'imagens' onde teremos um arquivo com uma foto de vocês e o nome do arquivo deverá ser foto.png

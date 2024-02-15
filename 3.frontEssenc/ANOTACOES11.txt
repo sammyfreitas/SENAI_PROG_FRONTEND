@@ -1,0 +1,147 @@
+input 
+
+text
+number
+textarea
+
+date  --/--/----
+
+tel
+(21)  97528-7327
+21 97528-7327
++55 21 97528-7327
+21975287327
+
+
+9xprimeiro 2 = 18
+8xsegundo  1 = 8
+7x         9 = 63
+
+
+id= <nome variavel>
+name <grupo>
+placeholder <aparece para o usuário>
+pattern 21-97528-7327
+(21)97528-7327
+
++55(21)97528-7327
+
+string = "(\d{2})\d{5}-\d{4}"
+string = "(\d{2})\d{5}-\d{4}"
+
+string = "+\d{2}(\d{2})\d{5}-\d{4}
+
+input type='number' pattern="\d{3}.\d{3}.\d{3}-\d{2}"
+
+23/01.1234-A
+
+pattern="\d{2}/\d{2}.\d{4}-\d{1}"
+ 
+javascript - vai permitir que vc crie
+
+codigo valida_cpf 
+criar um programa javascript 
+gerar números de cpf validos
+  - aleatorio pra 9 digitos
+   852369741
+      valida_cpf
+   852369741-58
+
+(javascript)
+
+
+.-+*/
+
+cpf
+07543253771
+075.432.537-71
+
+
+pattern="\d{2}-\d{5}-\d{4}"
+
+21975287327
+21-97528-7327
+(21)97528-7327
+
+(padrão / máscara)
+
+
+------------------------------------------------
+html 
+id=nome				nome=
+id=telefone			endereco=
+id=endereco
+id=tipodepao
+id=tipodecarne
+id=bebida
+id=troco
+
+ParseFloat ou ParseInt
+
+var nome = document.getElementbyId("nome").value;
+
+
+
+grupo informações = salada
+
+<input type="checkbox"
+       id=" " (variavel)
+       name=grupo de informações
+
+
+<input type="checkbox"
+       id="barbe " (variavel) (CSS estilizar # / JS = trazer uma variavel .value
+       name=molhos
+       value= precisar marcar um GRUPO DE INFORMAÇÕES dentro de uma mesma variável
+   BARBECUE
+
+
+
+
+molhos="barbiekill + ketchup + mostarda + 
+
+
+
+
+
+
+
+
+
+var nome = document.getelementbyId("nome").value;
+var trabalho = ParseFloat(document.getelementbyId("trabalho").value);
+.
+.
+var media = (trabalho + teste + prova)/3;
+
+//cria a variavel que vai mostrar a informação na tela
+var info_tela = document.getelementbyId("resultado");
+
+//Exibir na tela
+info_tela.innerHTML = nome + "Sua média é: " + media;
+
+if (media >=6){
+	info_tela.innerHTML = nome + "Sua média é: " + media + "E você está Aprovado";
+} elseif (media >=4) {
+	info_tela.innerHTML = nome + "Sua média é: " + media + "E você está Em recuperação";
+} else
+	info_tela.innerHTML = nome + "Sua média é: " + media + "E você está Reprovado";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

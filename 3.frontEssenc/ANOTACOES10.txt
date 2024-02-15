@@ -1,0 +1,78 @@
+HTML
+<input type="texto" id="nome" placeholder="Digite seu nome">
+<input type="number" id="idade" placeholder="Digite sua idade">
+<input type="number" id="nota1" placeholder="Digite a nota1">
+
+<input type="date" id="aniversario" placeholder="Digite seu aniversário">
+<input type="password" id="senha" placeholder="Digite a senha com 6 digitos">
+<input type="radio" id="masculino"> (bolinha de seleção)
+<input type="checkbox" id="opc1": (pode marcar várias opções
+<input type="textarea" id="textomaior">
+<input type="file" id="escolhearquivo">
+<input type="button" 
+<button>
+
+
+
+JS
+idade = parseInt(document.getElementbyId("idade").value);
+Nota1 = parseFloat(document.getElementbyId("nota1").value);
+
+
+
+lista de opções
+--------------
+Botafogo
+Flamengo
+Fluminense
+Vasco
+
+switch (variavel)
+
+    case  1
+	break;
+    case  2
+	break;
+    case  3
+	break;
+    case  4
+	break;
+    default:
+--------------------------------------
+var nome = document.getElementbyID("nomeUsuario").value; /*TODA VEZ QUE CRIAR UMA VARIAVEL PARA PEGAR INFORMAÇÃO DA TELA/USUÁRIO, PRECISA DO .value
+
+var lbl_resposta = document.getElementbyID("lbl_resposta");
+
+lbl_resposta.innerHTML = nome + ", <br>o Botafogo teve uma excelente campanha, <br>mas não conseguiu ser campeão :-(";
+            break;
+
+
+
+-------------
+EXERCICIO
+                       redes sociais 
+nome ficticio pra escola
+
+ALGORITMO - RECEBA 3 NOTAS E CALCULE A MÉDIA
+
+FAÇA UMA PAGINA COM:
+NOME DO ALUNO (INPUT TYPE TEXT
+NOME DA MATERIA (SELECT - PORTUGUES, MATEMATICA, GEOGRAFIA, HISTÓRIA, CIENCIAS, INGLES)
+TESTE 		INPUT TYPE=NUMBER 
+PROVA		parseFloat((document.getElementbyId("teste").value)
+TRABALHO
+MEDIA
+
+uma label pronta para receber: média
+------------------------------------------------
+uma label pronta para receber: APROVADO/REPROVADO
+
+-----------------
+FEITO POR FULANO, PROF BLA bla bla
+AULA DE FRONT END
+---------------------------
+
+
+
+
+

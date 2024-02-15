@@ -1,0 +1,38 @@
+21/11/23
+-------------
+1. CRIAR SEMPRE UMA PASTA RAIZ PARA SEU PROJETO NOVO.
+2. A PASTA RAIZ DEVERÁ TER UMA PASTA ESPECÍFICA PARA:
+	- IMAGENS
+	- CSS
+	- JS
+	- REACT
+3. TODOS OS TIPOS DE ARQUIVOS DEVERÃO FICAR JUNTOS.
+4. ARQUIVOS HTML SOZINHOS NA PASTA RAIZ
+5. QUANDO FOR FAZER O HIPERLINK OU ENCONTRAR A FONTE DE CADA ARQUIVO, ELE DEVERÁ SER REFERENCIADO APENAS PARA A PASTA DO TIPO DE ARQUIVO.
+	EX. PASTA:
+	C:\USERS\ANTHONY\DOCUMENTOS\PROJETO_BRASILEIRAO\IMAGENS
+	C:\USERS\ANTHONY\DOCUMENTOS\PROJETO_BRASILEIRAO\CSS
+	
+O ARQUIVO INDEX DEVERÁ ESTAR NA PASTA 'PROJETO_BRASILEIRAO'
+AS IMAGENS DENTRO DA PASTA IMAGENS
+A REFERÊNCIA SERÁ:
+	<img src="./imagens/botafogo.png"> </img>
+	
+	<a href="sobre.html" target="_blank">
+	
+	<link rel="stylesheet" type="text/css" href=".css/style.css">
+	
+	
+	th {
+            background-color: #a0ced9; /* Cor de fundo pastel para o cabeçalho da tabela */
+        }
+    tr:nth-child(even) {
+         background-color: #d9ebf0; /* Cor de fundo pastel para linhas pares */
+        }
+
+    tr:nth-child(odd) {
+        background-color: #b3cde0; /* Cor de fundo pastel para linhas ímpares */
+    }
+	
+	
+	

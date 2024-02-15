@@ -1,0 +1,41 @@
+29/11/23 - Marquee e Animação CSS
+
+MARQUEE:  
+	PADRÃO: direction="left", scrollamount="5", behavior="scroll"
+	
+	Texto rolando da direita para esquerda. (direction: left)
+	Texto rolando da esquerda para direita. (direction: right)
+	Texto rolando da esquerda para direita. (direction: up)
+	Texto rolando debaixo pra cima. (direction: down)
+		
+	Velocidade: scrollamount
+	Comportamento: behavior: 
+		scroll - passa de um lado para o outro, quando termina, ele recomeça.
+		slide: passa de um lado para o outro e quando a frase termina, ele para
+		alternate: 
+
+	HTML - LINGUAGEM DE MARCAÇÃO
+	CSS - LINGUAGEM DE ESTILIZAÇÃO (permite pequenas animações)
+		'at-rules' 
+		body - 
+		.class
+		#id
+		@rules (keyframe - animação marquee)
+	JS - LINGUAGEM DE PROGRAMAÇÃO
+	
+	
+Para configurar cores de fundo, da fonte, tipo de fonte, tamanho, e etc (marquee dentro do HTML):
+	Usar uma DIV
+	
+html:
+	<div class="marquee">
+		<marquee direction="left" scrollamount="8" behavior="alternate">Cápsula da Nasa transportando amostras de solo que retirou da superfície do asteroide Bennu.</marquee>
+	</div>
+	
+css:
+	.marquee{
+		background-color:lightblue;
+		color:black;
+		font-family:Verdana;
+		font-size:larger; 
+	}

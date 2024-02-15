@@ -1,0 +1,64 @@
+24/11/23
+----------
+Class x ID
+
+JavaScript
+# id - único - somente um para aquele elemento
+	<td id="id-menu1">
+	<td id="id-menu2">
+	<td id="id-menu2">
+	
+	<label id='lb1_resultado'>
+	JS - 
+	var resultado = document.getElementbyId('lb1_resultado')
+	resultado.innerHtml= resultado;
+	
+	css
+	#lb1_resultado{
+		margin-top=50%;
+		background-color = darkgrey;
+		color = yellow;
+		font-size=16px;
+		
+	}
+	
+	
+CSS - SÓ CLASS	
+. class	= a mesma classe para vários elementos iguais.
+ex. <td class="td-menu">
+	<td class="td-menu">
+	<td class="td-menu">
+
+------------
+ALGORITMO CALCULA_SOMA
+var
+	num1, num2, soma=real
+	
+inicio
+	IMPRIMA('Digite o num1')
+	leia (num1)
+	IMPRIMA('Digite o num2')
+	leia(num2)
+	soma=num1 + num2
+	IMPRIMA('A soma de ', num1, 'e ', num2, 'é: ', soma)
+fim
+ <input type="number" id="inp_num1">
+ <input type="number" id="inp_num2">
+ var soma = num1 + num2
+ 
+ <p id="resultado"> </p>
+ <label id="resultado1"> </label>
+ 
+		type="text"
+------------
+No html as estilizações são feitas com '='
+No css as estilizações são feitas com ':' e ';' no final	
+
+
+PARA COLOCAR IMAGEM NO FUNDO:
+
+DENTRO DO CSS:
+body{
+	background-image:'./imagens/fundo.jpg';
+	background-repeat: no-repeat;
+}

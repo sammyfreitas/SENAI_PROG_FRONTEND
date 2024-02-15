@@ -1,0 +1,25 @@
+anthony.freitas@docente.senai.br
+
+- Pagina Portfolio (Projeto Integrador)
+	- Projeto 1 - Página do Brasileirão (Até 17/11)
+		Competências: HTML, CSS
+	- Projeto 2 - Página de Negócio Local (Até  27/11)
+		Competências: HTML (tabelas, imagens, marquee, footer)
+	- Projeto 3 - Livre
+		Competências: HTML, CSS (Até  03/12)
+	- Projeto 4 - Calculadora 
+		Repositório: https://github.com/sammyfreitas/calculadora
+		Competências: HTML, CSS, JavaScript (Semana de 04/12 a 08/12)
+	- Projeto 5 - Calculadora de IMC (Até  12/12)
+		Competências: HTML, CSS, JavaScript 
+	- Projeto 6 - APP React - (Semana de 11/12 a 15/12)
+	(one page feita com Create APP React)
+		Competências: HTML, CSS, React
+	- Projeto Integrador - Portal - 5 páginas dele + Hiperlinks para suas próprias páginas externas (imagem representando os projetos ou print da tela do projeto)
+	(Começar imediatamente e fazer integrando o que for fazendo no decorrer do curso)
+	(Pagina Portfolio contendo todos os projetos - precisará ter mais de uma página associada) com Menu superior: 
+	Home, Projetos, Curriculo, Parceiros, Sobre 
+		Hiperlink, imagens (quadradas, redondas, canto arredondado), tabelas, listas ordenadas, uso de CSS e JavaScript somente nas páginas que tem projetos com javascript
+	
+	
+	
