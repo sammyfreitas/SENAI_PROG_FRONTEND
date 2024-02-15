@@ -1,0 +1,115 @@
+body{
+	font-family: Comic Sans Ms;
+	font-size: medium;
+	color: white;
+	background-color: black;
+}
+
+
+
+header{
+	background-color:#333; 	
+	color:#fff; 			/*branco*/
+	text-align:center;
+	padding:10px;
+}
+
+.header-content{
+	display:flex;			/*tipo de apresentação das divs na tela*/
+	justify-content:center;
+	align-items:center;	
+}
+
+.header-content img{
+	max-width:50%;
+	margin-right:10px;
+	border-radius:50%;
+}
+
+.marquee{
+		background-color:lightblue;
+		color:black;
+		font-family:Verdana;
+		font-size:larger; 
+	}
+	
+
+
+
+
+.container {
+    display: flex;
+}
+
+.menu{
+	background-color:#444; 	/* cinza claro*/
+	color:#fff; 			/*branco*/
+	display:flex;
+	float:left;
+	width:30%;
+	justify-content: space-between; 
+	align-items:center;	
+}
+
+.menu ul{
+	list-style:none;
+	padding:10;
+	margin:0;
+	display:flex;
+}
+
+.menu li{
+	margin-right:50px;
+}
+ 
+ /* site com templates de HTML, CSS:
+    templatemonster.com */
+
+.main{
+	margin-left:0 auto;
+	background-color:black;
+	color: white;
+	padding:20px;
+	flex: 1;
+	/*
+	grow    - crescer padrão: grow=0)
+	shrink  - encolhe padrão: shrink=1
+	basis - tamanho sem crescer ou encolher - tamanho fixo (px, %, auto)
+	flex 1 =  grow 1, basis 0%
+	*/
+}
+
+.aside{
+	width:20%;
+	background-color:#555;
+	color:white;
+	float:left;
+	padding: 20px;
+}
+
+footer{
+	background-color:lightblue;
+	color:black;
+	text-align:center;
+	padding:1px;
+}
+
+
+
+h1{
+	
+}
+
+p {
+	
+}
+
+a{
+	text-decoration: none;
+	color:lightblue;
+}
+
+a:visited{
+	text-decoration: none;
+	color:yellow;
+	}

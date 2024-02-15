@@ -1,0 +1,81 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  height: 100vh;
+  background-image: url("https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/08/materiais-para-pintura.jpg"); 
+  background-size: cover;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity:0.8;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;  
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#resultado {
+  margin-top: 10px;
+  border: 1px solid #ccc; /* Adiciona uma borda ao redor do label */
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  opacity:0.8;
+}
+
+
+.outer-container {
+    background: rgb(31, 31, 31); /* Cor de fundo */
+    margin-top: 10px;
+	padding: 20px; /* Espaçamento interno */
+	border-radius: 10px; /* Valor do raio do arredondamento */
+    overflow: hidden; 
+	color:white;
+	text-align:center;
+	opacity:0.8;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: red; /* Ou a cor desejada para o hover */
+}

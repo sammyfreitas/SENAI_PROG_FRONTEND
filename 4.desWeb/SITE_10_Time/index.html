@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Time</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<!--Arquivo JavaScript-->
+	<script src="./js/script.js"></script>
+	
+	
+	<div id="conteudo">
+		<label>Nome</label><br>		
+		<!--Insere uma caixa de texto para o usuário digitar seu nome-->
+		<input type="text" id="nomeUsuario" placeholder="Digite seu nome"><br><br>
+		<label>Time Carioca:</label><br>
+		<select id="times">
+            <option value="time1">Botafogo</option>
+			<option value="time2">Flamengo</option>
+            <option value="time3">Fluminense</option>
+            <option value="time4">Vasco</option>
+        </select><br><br>
+
+		<!--<div class="grupo-genero">
+			<input type="radio" name="genero" id="masculino">Masculino</input>
+			<input type="radio" name="genero" id="feminino">Feminino</input>
+			<input type="radio" name="genero" id="transgenero">Transgênero</input>
+			<input type="radio" name="genero" id="nao_binario">Não Binário</input>
+			<input type="radio" name="genero" id="outros">Outros</input>
+		</div>-->
+
+
+		<!--Insere um botão para chamar a função-->
+		<button onclick="TimeEscolhido()">OK</button><br>
+		<!--Label para exibir a informação final-->
+		<label id="lbl_resposta"> </label>
+	
+	
+</div>
+	
+	
+</body>
+
+<footer>
+</footer>
+
+</html>

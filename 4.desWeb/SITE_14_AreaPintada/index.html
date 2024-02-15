@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Calculadora de Pintura</title>
+</head>
+<body>
+
+  <div class="container">
+	<div class="outer-container">
+		<div class="social-icons">
+			<a href="https://www.linkedin.com/in/tony-s-freitas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><i class="fas fa-globe"></i></a>
+			<a href="https://github.com/sammyfreitas" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.instagram.com/anthony_tijuduke" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="mailto:tonysdefreitas@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+			<a href="https://wa.me/5521975287327" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+		</div>
+	</div>
+	<h1>Calculadora de Pintura</h1>
+    
+    <label for="largura">Largura da parede (metros):</label>
+    <input type="number" id="largura" placeholder="Digite a largura">
+
+    <label for="altura">Altura da parede (metros):</label>
+    <input type="number" id="altura" placeholder="Digite a altura">
+	
+	<button onclick='calcular()'>Calcular</button>
+    
+	<!--QUANDO FOR COLOCAR TODOS OS DADOS DIRETO NO INNERHTML DO JS
+		<div id="resultado"></div>   -->
+	
+	<!--QUANDO FOR TRAZER OS RESULTADOS DO JS-->
+    <div id="resultado">
+      <p>Área a ser pintada: <span id="area"></span> m²</p>
+      <p>Tinta necessária: <span id="tinta"></span> litros</p>
+	  <p>Latinha 0,9lt: <span id="latinha"></span> ou</p>
+	  <p>Galão 3,6lt: <span id="galao"></span> ou</p>
+	  <p>Lata 18lt: <span id="lata"></span>.</p>
+    </div>
+	
+	<div class="outer-container">
+		Desenvolvido por Anthony sob orientação do prof. Anthony Samuel<br>no Curso de Programador Front-End no Senai Maracanã<br>Todos os direitos reservados - 2023
+	</div>
+  </div>
+	
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.image-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 3s ease-in-out; /* Ajuste o tempo conforme necessário (de 3 a 5 segundos) */
+}
+
+.fade.active {
+  opacity: 1;
+}

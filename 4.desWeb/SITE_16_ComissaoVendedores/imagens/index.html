@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Comissão</title>
+</head>
+<body>
+    <div class="container">
+        <div class="outer-container">
+			<div class="social-icons">
+				<a href="https://www.linkedin.com/in/tony-s-freitas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><i class="fas fa-globe"></i></a>
+				<a href="https://github.com/sammyfreitas" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://www.instagram.com/anthony_tijuduke" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="mailto:tonysdefreitas@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+				<a href="https://wa.me/5521975287327" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+			</div>
+		</div>
+	
+		<div class="left-panel">
+            <h2>Informações dos Corretores</h2>
+            <div class="corretores">
+                <label for="nome1">Nome Corretor 1:</label>
+                <input type="text" id="nome1" placeholder="Nome">
+                <label for="imagem1">Imagem URL:</label>
+                <input type="text" id="imagem1" placeholder="Imagem URL">
+                <label for="corretor1">Vendas Corretor 1 (R$):</label>
+                <input type="number" id="corretor1" placeholder="Vendas">
+            </div>
+            <div class="corretores">
+                <label for="nome2">Nome Corretor 2:</label>
+                <input type="text" id="nome2" placeholder="Nome">
+                <label for="image2">Imagem URL:</label>
+                <input type="text" id="image2" placeholder="Imagem URL">
+                <label for="corretor2">Vendas Corretor 2 (R$):</label>
+                <input type="number" id="corretor2" placeholder="Vendas">
+            </div>
+            <div class="corretores">
+                <label for="nome3">Nome Corretor 3:</label>
+                <input type="text" id="nome3" placeholder="Nome">
+                <label for="image3">Imagem URL:</label>
+                <input type="text" id="image3" placeholder="Imagem URL">
+                <label for="corretor3">Vendas Corretor 3 (R$):</label>
+                <input type="number" id="corretor3" placeholder="Vendas">
+            </div>
+            <button onclick="calculateCommissions()">Calcular Comissões</button>
+        </div>
+        <div class="right-panel">
+            <h2>Comissões dos corretores</h2>
+            <div id="output"></div>
+            <div class="total">
+                <p>Total de Vendas (Bruto): <span id="totalcorretor"></span></p>
+                <p>Total de Comissões (Líquido): <span id="totalCommissions"></span></p>
+            </div>
+        </div>
+		<div class="outer-container">
+			Desenvolvido por <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank">Anthony Freitas</a><br>no Curso de Programador Front-End no Senai Maracanã<br>Todos os direitos reservados - 2023
+		</div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body{
+	background-color: black;
+	color:white;
+	font-size:16px;
+}
+
+.tit1{
+	color:red;
+	font-size:larger;
+	text-align:center;
+}
+
+.tit2{
+	color:yellow;
+	font-size:x-large;
+	text-align:center;	
+}
+
+.tit3{
+	color:pink;
+	font-size:xx-large; 
+	text-align:center;
+}
+
+.tit4{
+	color:lightblue;
+	font-size:xxx-large; 
+	text-align:center;
+}
+
+.tit5{
+	color:lightgreen;
+	font-size:medium; 
+	text-align:center;
+}
+
+
+
+.foto{
+	border-radius:50%;
+	width:30%;
+	height:10%;
+}
+p{
+	padding=16px;
+}
+a{
+	color:yellow;
+	text-decoration:none;
+}
+a:visited{
+	color:lightblue;
+}
+a:hover{
+	color:red;
+	}
+
+.td-menu{
+	background-color:grey;
+}
+.td-menu:hover{
+	background-color:green;
+}
+
+
+.paragrafo_enfase{ 
+	text-align:"justify";
+	padding:16px;
+	color: red;
+}
+
+			
+
+
+
+
+.logo_LP{
+	width: 15px;
+	border-radius:15%;
+	color:white;
+	
+}
+.logo_LP:hover{
+	color:green;
+}

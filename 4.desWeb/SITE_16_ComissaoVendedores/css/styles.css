@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background-image: url('https://boldfinance.com.br/wp-content/uploads/2021/08/Sua-imobiliaria-e-digital_-Descubra-a-resposta-.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+	left:250px;
+	border: 2px solid lightgrey;
+	padding: 8px;
+	border-radius: 10px;
+	max-width: 180px;
+	color:darkblue;
+}
+
+label{
+	left:100px;
+	padding: 10px;
+	max-width: 80px;
+	color:darkblue;
+}
+
+
+
+.container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	position: relative; /* Adiciona um contexto de posicionamento para os elementos filhos absolutos */
+}
+
+.left-panel, .right-panel {
+    padding: 20px;
+    flex: 1;
+}
+
+.left-panel {
+    border-right: 2px solid #ccc;
+}
+
+.corretores {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.corretor-info {
+    display: flex;
+    align-items: center;
+	text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px; /* Tamanho da imagem, ajuste conforme necessário */
+}
+
+.total {
+    margin-top: 20px;
+}
+
+	
+	
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius:10px;
+  cursor: pointer;
+  text-align:center;
+ }
+
+button:hover {
+  background-color: #45a049;
+}
+
+#resultado {
+  margin-top: 10px;
+  border: 1px solid #ccc; /* Adiciona uma borda ao redor do label */
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  opacity:0.8;
+}
+
+
+.outer-container {
+    background: darkblue; /* Cor de fundo */
+    position: absolute;
+	top:4px; /*caso coloque um valor não válido o js considera 0 auto */
+	margin-left:554px;
+	z-index:2;
+	padding: 8px; /* Espaçamento interno */
+	border-radius: 8px; /* Valor do raio do arredondamento */
+    overflow: hidden; 
+	color:white;
+	text-align:center;
+	opacity:0.8;
+}
+
+.rodape-container {
+    background: darkblue; /* Cor de fundo */
+    position: absolute;
+	bottom: 5px;
+	margin-left: 10px;
+	padding: 10px 80px; /* Espaçamento interno */
+	border-radius: 10px; /* Valor do raio do arredondamento */
+    overflow: hidden; 
+	color:white;
+	text-align:center;
+	opacity:0.8;
+}
+        
+
+a:visited{
+	color:lightgrey;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: lightblue
+}

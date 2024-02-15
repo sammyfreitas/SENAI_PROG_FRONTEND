@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Calculadora de Comissão de Corretores</title>
+</head>
+<body>
+    <div class="outer-container">
+		<div class="social-icons">
+			<a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><i class="fas fa-globe"></i></a>
+			<a href="https://wa.me/5521975287327" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+			<a href="https://www.linkedin.com/in/tony-s-freitas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.instagram.com/anthony_tijuduke" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="mailto:tonysdefreitas@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+			<a href="https://github.com/sammyfreitas" target="_blank"><i class="fab fa-github"></i></a>
+		</div>
+	</div>
+	<div class="container">
+    	<div class="left-panel">
+			<h2>Informações dos Corretores</h2>
+            <div class="corretores">
+                <label for="nome1">Nome Corretor:</label>
+                <input type="text" id="nome1" placeholder="Nome">
+                <label for="imagem1">imagem URL:</label>
+                <input type="text" id="imagem1" placeholder="imagem URL">
+                <label for="corretor1">Vendas (R$):</label>
+                <input type="number" id="corretor1" placeholder="Vendas">
+            </div>
+            <div class="corretores">
+                <label for="nome2">Nome Corretor:</label>
+                <input type="text" id="nome2" placeholder="Nome">
+                <label for="imagem2">imagem URL:</label>
+                <input type="text" id="imagem2" placeholder="imagem URL">
+                <label for="corretor2">Vendas (R$):</label>
+                <input type="number" id="corretor2" placeholder="Vendas">
+            </div>
+            <div class="corretores">
+                <label for="nome3">Nome Corretor:</label>
+                <input type="text" id="nome3" placeholder="Nome">
+                <label for="imagem3">imagem URL:</label>
+                <input type="text" id="imagem3" placeholder="imagem URL">
+                <label for="corretor3">Vendas (R$):</label>
+                <input type="number" id="corretor3" placeholder="Vendas">
+            </div>
+            <button onclick="CalculaComissao()">Calcular Comissões</button>
+        </div>
+        <div class="right-panel">
+            <h2>Comissões dos corretores</h2>
+            <div id="output"></div>
+            <div class="total">
+                <p><b>Total de Vendas (Bruto): R$ <span id="totalvendas"></span></p>
+                <p>Total de Comissões: R$ <span id="totalComissoes"></span></p>
+				<p>Renda Líquida: R$ <span id="rendaLiquida"></span></b></p>
+            </div>
+        </div>
+	</div>
+		
+	
+	<div class="rodape-container">
+		Desenvolvido por <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank">Anthony Freitas</a> no Curso de Programador Front-End no Senai Maracanã<br>Todos os direitos reservados - 2023
+	</div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+<!--
+	https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/366736014_827034832100120_718551952435424616_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdTUEWERj_HeSVxBHH9emPQ6G1B6t4q0V8wuHHHWzxRA5Q&oe=6584C13E&_nc_sid=e6ed6c&_nc_cat=100
+	https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/323143448_187069840713536_7334936430748918038_n.jpg?ccb=11-4&oh=01_AdQTERnUsfsM_GW3kB1JLWvu6Jze4mzoHfPii7t9Wmo5ZQ&oe=6584C8D0&_nc_sid=e6ed6c&_nc_cat=103
+	
+	
+	https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/376250640_646015307689286_7839501506618916621_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdTunM5CRGYfJzZNU_WIDtrssqqukLQ2YovC4WLz7pKCBw&oe=6584C180&_nc_sid=e6ed6c&_nc_cat=109 -->

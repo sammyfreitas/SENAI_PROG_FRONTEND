@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Calculadora de Dias Vividos</title>
+</head>
+<body>
+  <script src="./js/script.js"></script>
+  <div class="container">
+	<div class="outer-container">
+		<div class="social-icons">
+			<a href="https://www.linkedin.com/in/tony-s-freitas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><i class="fas fa-globe"></i></a>
+			<a href="https://github.com/sammyfreitas" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.instagram.com/anthony_tijuduke" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="mailto:tonysdefreitas@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+			<a href="https://wa.me/5521975287327" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+		</div>
+	</div>
+	<h2>Calculadora de Dias Vividos</h2
+	>
+    
+    <label for="nome">Nome :</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+
+    <label for="dataNasc">Data de Nascimento:</label>
+    <input type="date" id="dataNasc" placeholder="Digite sua data de nascimento">
+	<br>
+    <button onclick="CalculaIdade()">Calcular Tempo Vivido</button>
+
+    <div id="resultado">
+      <p>Olá,  <span id="nome"></span> tudo bem?</p>
+      <p>Você viveu: <span id="anos"></span></p>
+	  <p>Você viveu: <span id="meses"></span></p>
+	  <p>Você viveu: <span id="semanas"></span></p>
+	  <p>Você viveu: <span id="dias"></span></p>  
+    </div>
+	
+	<div class="outer-container">
+		Desenvolvido por Anthony sob orientação do prof. Anthony Samuel<br>no Curso de Programador Front-End no Senai Maracanã<br>Todos os direitos reservados - 2023
+	</div>
+  </div>
+</body>
+</html>

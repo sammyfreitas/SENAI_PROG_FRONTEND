@@ -1,0 +1,54 @@
+body{
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvU2JD2aNsM36-gw0I-jrZ5pX3Wjsr-aVIMMYTo6AVy--Eybyj4UnUTmwS2ksJdeE2U4&usqp=CAU");
+	background-position:center center; /*Usa-se center center para alinhar nos dois eixos X e Y, caso queira alinhar a direita ou esquerda, usar right ou left*/
+	background-repeat: no-repeat; /*faz a imagem não se repetir*/
+	background-attachment:fixed; /*faz a imagem ficar parada/fixa no fundo da tela quando ocorre barra de rolagem*/
+	background-size: cover; /*aumenta a imagem para ocupar a tela toda*/
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100vh;
+	margin:0;
+	color:white;
+}
+
+
+p{
+	padding: 10px;
+	margin: 0 auto;
+	text-align: justify;
+	
+	
+}
+
+
+
+button{
+	background: linear-gradient(to bottom, black, grey);
+	padding:10px 20px;
+	border: none; /*solid, dashed, dotted, ridge, inset, outset*/
+	border-radius: 10px;
+	color: white;
+	cursor: pointer; /*pointer=seta / move = elemento pode ser movido / text : indica que pode selecionar o texto*/
+	transition: background 0.2s; /*faz a transição do linear gradiente do mouse hover ficar 'suave' com apenas 2 seg*/
+}
+
+button:hover{
+	background: linear-gradient(to top, black, grey); /*para a transição do mouse hover ficar leve para o usuário, use um gradiente nas direções opostas*/
+}
+
+#conteudo{
+	background: linear-gradient(to bottom left, darkblue, lightblue);
+	/*diagonal: bottom left ou bottom right, para baixo bottom, para cima top, para direita right, para esquerda left*/
+	padding: 20px;
+	border-radius:10px; /*faz a borda ficar arredondada*/
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*cria uma sombra suave em volta da div*/
+	height:100%;
+	max-height:100px;
+}
+
+#lbl_nome{
+	padding: 20px;
+	color:darkblue;
+}

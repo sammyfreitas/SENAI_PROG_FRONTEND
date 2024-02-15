@@ -1,0 +1,228 @@
+body{
+	font-family: Comic Sans Ms;
+	font-size: medium;
+	color: white;
+	/*background-color: black;*/
+	background-image:url('./imagens/nasa.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	/*ME LEMBRAR - FUNDO GRADIENTE E IMAGEM DE FUNDO*/
+}
+
+.enfase{
+	font-family: Comic Sans Ms;
+	font-size: medium;
+	color: yellow;
+	background-color: darkblue;
+}
+header{
+	background-color:#333; 	
+	color:#fff; 			/*branco*/
+	text-align:center;
+	padding:10px;
+}
+
+.header-content{
+	display:flex;			/*tipo de apresentação das divs na tela*/
+	justify-content:center;
+	align-items:center;	
+}
+
+.header-content img{
+	max-width:50%;
+	margin-right:10px;
+	border-radius:50%;
+}
+
+.marquee-container{
+	width:100%;
+	overflow: hidden;  /* visible, hidden, scroll, auto*/
+}
+.marquee-texto{
+	display:inline-block;
+	white-space:nowrap;
+	animation: marquee 20s linear infinite;
+	background-color:lightblue;
+	color:black;	
+	padding:10px 100px 10px 100px;
+}
+@keyframes marquee{
+	from{
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+	
+	
+.marquee-container2{
+	width:100%;
+	overflow: hidden;  /* visible, hidden, scroll, auto*/
+}
+.marquee-texto2{
+	display:inline-block;
+	white-space:nowrap;
+	animation: marquee2 20s linear infinite;
+	background-color:lightgreen;
+	color:black;	
+	padding:10px 100px 10px 100px;
+}
+@keyframes marquee2{
+	from{
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.container {
+    display: flex;
+}
+
+.menu{
+	background-color:#444; 	/* cinza claro*/
+	color:#fff; 			/*branco*/
+	display:flex;
+	float:left;
+	width:75%;
+	justify-content: space-between; 
+	align-items:center;	
+}
+
+.menu ul{
+	list-style:none;
+	padding:10;
+	margin:0;
+	display:flex;
+}
+
+.menu li{
+	margin-right:50px;
+}
+ 
+ /* site com templates de HTML, CSS:
+    templatemonster.com */
+
+.main{
+	margin-left:0 auto;
+	background-color:black;
+	color: white;
+	padding:20px;
+	flex: 1;
+	/*
+	grow    - crescer padrão: grow=0)
+	shrink  - encolhe padrão: shrink=1
+	basis - tamanho sem crescer ou encolher - tamanho fixo (px, %, auto)
+	flex 1 =  grow 1, basis 0%
+	*/
+}
+
+.aside{
+	width:20%;
+	background-color:#555;
+	color:white;
+	float:left;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.aside img{
+	width:100%;
+	height:auto;
+	animation: zoomImagem 5s ease-in-out infinite alternate;
+}
+@keyframes zoomImagem{
+	0% {
+		transform:scale(1);
+	}
+	100%{
+		transform:scale(1.5);
+	}
+}
+
+.minhasImagens{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow: hidden;
+}
+
+.minhasImagens1,
+.minhasImagens2,
+.minhasImagens3{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow: hidden;
+}
+
+
+.zoomdaImagem{
+	transition: transform 0.8s ease-in-out;
+
+}
+
+img:hover{
+	transform:scale(1.5);
+}
+
+.AnimacaoImagens{
+	overflow:hidden;
+}
+
+.imagem{
+	width: 40%;
+	animation: transicaoImagens 3s linear infinite;
+}
+
+
+
+@keyframes transicaoImagens{
+	0%,100%{
+		opacity:1;
+	}
+	25%,75%{
+		opacity:0;
+	}
+	50%{
+		opacity:1;
+	}
+}
+
+0	25 	50	75	100
+
+footer{
+	background-color:lightblue;
+	color:black;
+	text-align:center;
+	padding:1px;
+}
+
+
+
+h1{
+	
+}
+
+p {
+	
+}
+
+a{
+	text-decoration: none;
+	color:lightblue;
+}
+
+a:visited{
+	text-decoration: none;
+	color:yellow;
+	}
+	
+a:hover{
+	text-decoration: none;
+	color:black;
+	background-color:lightblue;
+	}
