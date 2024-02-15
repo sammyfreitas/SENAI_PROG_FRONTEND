@@ -1,0 +1,181 @@
+colocar na tela do usuário: 
+
+			"IMPRIMA"
+			"LEIA"
+			
+		PROCESSO 	= RETÂNGULO	  (AÇÃO)
+		DECISÃO 	= LOSANGO     (SE/SENÃO)
+
+PSEUDO CÓDIGO:
+
+ALGORTIMO ROTINA_DOMINGO
+VAR
+	PREV_TEMPO = CARACTERE
+INICIO
+	IMPRIMA ("ACORDAR")
+	IMPRIMA ("TOMAR CAFÉ")
+	IMPRIMA ("ESTÁ SOL (S/N)? ")
+	LEIA PREV_TEMPO
+	SE (PREV_TEMPO == "S") ENTAO
+		IMPRIMA ("VÁ À PRAIA")
+	SENAO 
+		SE (PREV_TEMPO == "N") ENTAO
+			IMPRIMA ("LEIA O JORNAL")
+		SENAO
+			IMPRIMA ("OPÇÃO INVÁLIDA")
+		FIMSE
+	FIMSE	
+FIM
+
+
+EXEMPLO
+----------------------------
+= ATRIBUIÇÃO
+== COMPARAÇÃO
+=== COMPARA 2 ITENS + COMPARA TIPO DE VARIÁVEL
+
+TAYNA = 2 CHOCOLATES
+LUCAS = 1 CHOCOLATE
+
+SE TAYNA == LUCAS ENTAO
+	IMPRIMA ('MESMA QTDE DE CHOCOLATE')
+SENAO 
+	IMPRIMA ('QTDE DIFERENTE DE CHOCOLATES')
+
+S
+
+SOMA = NUM1+NUM2
+	SE (SOMA == 0) ENTAO
+
+	SOL == SOL
+	sol <> SOL
+	Sol <> SoL
+	
+--------------------------
+PSEUDO CÓDIGO OU ALGORITMO
+
+
+OPERADORES MATEMÁTICOS
++	SOMA 
+- 	SUBTRAÇÃO
+* 	MULTIPLICAÇÃO
+/ 	DIVISÃO
+% 	RESTO DA DIVISÃO
+
+(INTEIRO) 25 / 2 = 12
+(REAL)	25 / 2 = 12,5
+RESTO  25/2 = 1
+188/2 = 94
+188%2 = 0
+
+RAIZ QUADRADA = MATH.SQRT(NUM)
+EXPONENCIAÇÃO = NUM³ = MATH.POW(NUM, 3) =  NUM * NUM * NUM
+PI = 3,1416 = MATH.PI 
+
+AREA DO CIRCULO = MATH.PI * MATH.POW(RAIO, 2)
+
+
+OPERADORES LÓGICOS
+OPERADORES RELACIONAIS
+
+
++ (-2) = -2
+- (-2) = +2
+
+FRUTA1 = "PERA"
+FRUTA2 = "MAÇÃ"
+
+SALADA_FRUTA = (FRUTA1)+ (FRUTA2)			RESP: D
+SALADA_FRUTA = (FRUTA1)+ (" ") + (FRUTA2)	RESP: E
+-----------------
+A) PERA
+B) MAÇÃ
+C) PERA + MAÇÃ
+D) PERAMAÇÃ
+E) PERA MAÇÃ
+
+------------------------------
+Vejamos os resultados destas expressões:
+VAR1 = (6 - 3)*2 
+IMPRIMA VAR1
+(6 - 3)*2  		= 6 
+2 * 6 / 3		= 4
+3 + 2 * 4 		= 11
+60 / (3 + 2) * 4	= 60 / 5 * 4 = 48
+2 * (20 / (8 + 2))	= 2 * (20/10) = 2* 2 = 4
+
+-----------------------
+OU - BASTA QUE 1 DAS OPÇÕES SEJA VERDADEIRA = VERDADEIRO
+E - SÓ QUANDO AS DUAS OPÇÕES FOREM VERDADEIRAS = VERDEIRO
+"F" OU "V" = V 			OU  ||
+"F" E "V" = F			E 	&&
+"V" E "V" = V
+
+^ DISJUNÇÃO EXCLUSIVA (OPÇÕES IGUAIS)
+F F = V
+V V = V
+SERÁ FALSO SOMENTE SE AS CONDIÇÕES FOREM DIFERENTES
+F V = FALSO
+V F = FALSO
+
+--------------------------------------------------------------------------
+02 - PERGUNTAR AO USUÁRIO O NUMERO E VERIFIQUE SE ELE É PAR OU IMPAR E IMPRIMIR NA TELA.
+--------------------------------------------------------------------------
+
+
+ALGORITMO <NOME>
+VAR
+	NUM = REAL
+	CALC = REAL							RETIRA DECLARAÇÃO
+INICIO
+	IMPRIMA("DIGITE UM NUMERO")
+	LEIA NUM
+	CALC = NUM%2						RETIRA ESSA LINHA
+	SE (CALC==0) ENTAO					SE (NUM%2=0) ENTAO	
+		IMPRIMA("NUMERO PAR)
+	SENAO
+		IMPRIMA("NUMERO IMPAR)
+	FIMSE
+FIM
+
+--------------------
+TENTATIVA ALUNO 1:
+
+VAR NUMERO = REAL 	/*
+					/VAR
+					/	NUMERO=REAL
+
+Inicio
+Imprima ("Digite um numero, meu amigo")
+Leia NUMERO
+ Se ("NUM==0") ENTAO	/* Se (NUM==0) ENTAO
+
+----------------------------------------------
+NOME = STRING 	
+	
+	IMPRIMA("DIGITE O NOME DO ALUNO")
+		LEIA NOME
+
+	IMPRIMA ("OLÁ, ", NOME)  	= OLÁ, JOÃO PEDRO
+	IMPRIMA ("OLÁ", NOME) 		= OLÁJOÃO PEDRO
+
+
+TENTATIVA ALUNO 2
+LUIZ FELIPE
+
+VAR
+     NUMERO = <TIPO DE VARIAVEL> (REAL, INTEIRO, BOOLEANA, STRING, CARACTERE....)
+	 
+INICIO
+	ATRIBUIR VALORES, 
+	FAZER CALCULOS, 
+	LER DADOS DO USUÁRIO, 
+	IMPRIMIR INFORMAÇÕES
+
+FIM
+
+
+
+
+
+

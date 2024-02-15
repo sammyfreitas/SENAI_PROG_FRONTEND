@@ -1,0 +1,43 @@
+===================================
+57. Faça um algoritmo que leia a largura e altura de uma parede,  
+calcule e mostre a área a ser pintada e a 
+quantidade de tinta necessária para o serviço, 
+sabendo que cada litro de tinta pinta uma área de 2metros quadrados.
+
+larg
+alt
+
+area = alt x larg
+tinta = area / 2
+
+var largura = parseFloat(document.getElementById('input-larg').value);
+var altura = parseFloat(document.getElementById('input-alt').value);
+
+var area = largura * altura;
+var tinta = area/2;
+
+
+
+
+PASSO 1
+	 LEIA LARGURA E ALTURA
+	 CALCULE A AREA
+	 CALCULE A TINTA
+---------------------------------------	 
+ALGORITMO AREA_PINTADA
+CONST
+	LITRO:REAL
+VAR
+	LARGURA, ALTURA, AREA, TINTA: REAL
+INICIO
+	LITRO = 2
+	IMPRIMA("DIGITE A ALTURA DA PAREDE")
+	LEIA ALTURA
+	IMPRIMA("DIGITE A LARGURA DA PAREDE")
+	LEIA LARGURA
+	AREA = ALTURA * LARGURA
+	IMPRIMA("A AREA A SER PINTADA É DE ", AREA, "M²")
+	TINTA = AREA / LITRO 
+	IMPRIMA("SERÃO NECESSÁRIOS ", TINTA, "LITROS DE TINTA")
+FIM
+---------------------------------------

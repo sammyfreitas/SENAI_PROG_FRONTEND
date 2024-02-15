@@ -1,0 +1,172 @@
+ALGORITMOS COM LAÇOS DE REPETIÇÃO
+----------------------------------
+
+
+33) Faça um algoritmo usando um laço de repetição e pergunte ao usuário qual tabuada e imprima na tela. Ao terminar a tabuada, perguntar se desejar fazer outra.
+
+ALGORITMO TABUADA_PARA  (11 linhas)
+VAR
+	cont, num, multip, result = inteiro
+	opcao = caractere
+INICIO
+	opcao=s
+	ENQUANTO OPCAO = "s" ou OPCAO = "S" FAÇA
+		IMPRIMA("Digite a tabuada desejada")
+		LEIA (num)								
+		PARA CONT DE 0 A 10 FAÇA
+			result = num*cont
+			IMPRIMA(num, " X ",cont, " = ", result)     
+		FIMPARA
+		IMPRIMA("=========================="
+		IMPRIMA("Deseja outra tabuada? (S/N)")
+		LEIA(opcao)
+	FIM_ENQUANTO
+FIM
+	
+---------- CONSOLE (TELA DO USUÁRIO) -----------------	
+
+
+		
+	IMPRIMA("======TABUADA DE 2=========")
+	PARA CONT DE 0 A 10 FAÇA
+		result = 2*cont
+		IMPRIMA("		2 X ",cont, " = ", result)     
+	FIMPARA
+	IMPRIMA("=========================="
+	
+-----------------------------------------
+ESTRUTURAS DE REPETIÇÃO	
+----------------------------------------------------------------------	
+34) Some os números de 1 a 100 e imprima o valor.
+----------------------------------------------------------------------
+ALGORITMO SOMA_DE_1_A_100
+VAR
+	NUM, SOMA: INTEIRO
+INICIO
+	SOMA=0
+	PARA NUM DE 1 ATE 100 FAÇA	
+		SOMA=SOMA+NUM
+	FIM_PARA
+	IMPRIMA ("A soma dos números de 1 a 100 é: ", SOMA)
+FIM
+----------------------------------------------------------------------
+35) Faça um algoritmo que imprima todos os números pares compreendidos entre 85 e 907. O algoritmo deve também calcular a soma destes valores.
+----------------------------------------------------------------------
+ALGORITMO PARES_DE_85_A_907
+VAR
+	NUM, PARES: INTEIRO
+INICIO
+	PARES=0
+	IMPRIMA("----------NUMEROS PARES ENTRE 85 E 907----------")
+	PARA NUM DE 85 ATE 907 FAÇA	
+		SE (NUM%2=0) ENTAO
+			IMPRIMA(NUM, " - ")
+			PARES=PARES+NUM
+		FIM_SE
+	FIM_PARA
+	IMPRIMA ("A soma dos números pares de 85 a 907 é: ", PARES)
+	IMPRIMA("-------------------------------------------------")
+FIM
+
+----------NUMEROS PARES ENTRE 85 E 907----------
+86 - 88 - 90 - 92 - 94 - 96 - 98 -...- 904 - 906
+
+A soma dos números pares de 85 a 907 é: 195.318
+-------------------------------------------------
+
+----------------------------------------------------------------------
+36) Escreva um algoritmo que calcule o produto dos inteiros ímpares de 1 a 15 e, então, exiba o resultado. 
+----------------------------------------------------------------------
+num, produto: inteiro
+("O produto dos números ímpares entre 1 e 15 é: ", produto)
+-------------------------------
+ALGORITMO PRODUTO_IMPARES
+VAR
+	NUM, PRODUTO: INTEIRO
+INICIO
+	PRODUTO = 1
+	PARA NUM DE 1 A 15 FAÇA
+		SE (NUM%2=1) ENTAO
+			PRODUTO = PRODUTO * NUM
+		FIM_SE
+	FIM_PARA
+	IMPRIMA ("O produto dos números ímpares entre 1 e 15 é: ", PRODUTO)
+FIM
+
+----------------------------------------------------------------------
+37) Escreva um algoritmo que pergunte ao usuário um número e calcule o fatorial dele. Em seguida, exiba o número e o resultado. 
+----------------------------------------------------------------------
+DICA: CALCULO DE FATORIAL = n!=N*(N-1)*(N-2)...
+							5!= 5 * 4 * 3 * 2 * 1
+					FATORIAL = 1
+					ENQUANTO NUM <> 1 FAÇA
+						FAT = NUM * FAT
+						NUM = NUM-1
+					FIM_ENQUANTO
+						
+num, fatorial: inteiro		
+("O cálculo do fatorial do número: ", num,"é: ",fatorial)
+
+-------------
+ALGORITMO FATORIAL
+VAR
+	NUM, FATORIAL: INTEIRO
+INICIO
+	FATORIAL = 1
+	IMPRIMA("Digite o número para calcular o fatorial: ")
+	LEIA (NUM)
+	ENQUANTO (NUM <> 1) FAÇA					3! = 3 X 2 X 1 = 6
+		FATORIAL = NUM * FATORIAL				4! = 4 X 3 X 2 X 1 = 24
+		NUM = NUM-1
+	FIM_ENQUANTO
+	IMPRIMA("O cálculo do fatorial do número: ", NUM,"é: ",FATORIAL)
+FIM
+
+NOTAÇÕES PARA USO DE 'DIFERENTE' 	<> 		!=
+----------------------------------------------
+
+38) Para uma turma de 45 alunos, construa um algoritmo que determine: 
+a) A idade média dos alunos com menos de 1,70m de altura; 
+--------------------------------------------------------------------
+  SOMA_ALTURA
+  MEDIA_IDADE
+  ALTURA
+PARA
+	SE (ALTURA <1,70) ENTAO	
+		CONT = CONT + 1
+		SOMA_ALTURA= ALTURA + SOMA_ALTURA
+	FIM_SE
+FIM_PARA
+MEDIA_IDADE = SOMA_ALTURA/CONT
+---------------------------------------------------
+ALGORITMO  IDADE_MEDIA_ALUNOS_BAIXINHOS
+VAR
+	ALUNO, ALTURA, IDADE, MEDIA_IDADE, MEDIA_ALTURA: INTEIRO
+INICIO
+	ALTURA=0
+	IDADE=0 
+	MEDIA_ALTURA=0
+	MEDIA_IDADE=1
+	PARA CONT DE 1 A 45 FAÇA
+		IMPRIMA("DIGITE A IDADE DO ALUNO")
+		LEIA(IDADE)
+		IMPRIMA("DIGITE A ALTURA DO ALUNO")
+		LEIA (ALTURA)
+		SE (ALTURA < 1,70) ENTAO	
+			SOMA_ALTURA = ALTURA + SOMA_ALTURA
+			MEDIA_IDADE = IDADE + MEDIA_IDADE
+			ALUNO = ALUNO + 1
+		FIM_SE
+		CONT = CONT + 1
+	FIM_PARA
+	MEDIA_IDADE = MEDIA_IDADE / ALUNO
+	MEDIA_ALTURA = SOMA_ALTURA / ALUNO
+	IMPRIMA ("A idade média dos alunos com menos de 1,70 é: ", MEDIA_IDADE)
+	IMPRIMA ("A altura média dos alunos com menos de 1,70 é: ", MEDIA_ALTURA)
+FIM
+
+
+
+
+
+b) A altura média dos alunos com mais de 20 anos

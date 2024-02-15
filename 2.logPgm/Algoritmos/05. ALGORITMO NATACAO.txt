@@ -1,0 +1,38 @@
+======================================================
+11. Elabore um algoritmo que dada a idade de um nadador classifique em uma das seguintes categorias:
+infantil A = 5 - 7 anos
+infantil B = 8-10 anos
+juvenil A = 11-13 anos
+juvenil B = 14-17 anos
+adulto = maiores de 18 anos
+======================================================
+
+ALGORITMO NATACAO
+VAR	
+	OPCAO: INTEIRO
+	IDADE: INTEIRO
+INICIO	
+	IMPRIMA("DIGITE A IDADE DO NADADOR")
+	LEIA IDADE
+	SE  (IDADE >=5)  E  (IDADE < 8)  ENTAO
+		IMPRIMA ("CATEGORIA INFANTIL A - 5 A 7 ANOS")
+	SENAO
+		SE  (IDADE >=8)  E  (IDADE < 11)  ENTAO
+			IMPRIMA ("CATEGORIA INFANTIL B - 8 A 10 ANOS")
+		SENAO
+			SE  (IDADE >=11)  E  (IDADE < 14)  ENTAO
+				IMPRIMA ("CATEGORIA JUVENIL A - 11 A 13 ANOS")	
+			SENAO
+				SE  (IDADE >=14)  E  (IDADE < 18)  ENTAO
+					IMPRIMA ("CATEGORIA JUVENIL B - 14 A 17 ANOS")	
+				SENAO
+					SE (IDADE >18) ENTAO
+						IMPRIMA ("CATEGORIA ADULTO - MAIOR DE 18 ANOS")	
+					SENAO
+						IMPRIMA ("MUITO JOVEM PARA SER NADADOR")
+					FIMSE
+				FIMSE
+			FIMSE
+		FIMSE
+	FIMSE
+FIM

@@ -1,0 +1,139 @@
+LOGICA DE PROGRAMAÇÃO
+-------------------------------------------
+13: Calculadora de Média de Notas
+-------------------------------------------
+Descrição: Desenvolva um algoritmo que calcula a média de três notas fornecidas como entrada.
+---------------------------------------
+Descrição: Desenvolva um algoritmo EM QUE PERGUNTE PRO USUARIO 3 NOTAS E DEPOIS  calcula a média E POR ULTIMO APRESENTE NA TELA
+-------------------------------------------
+ALGORITMO MEDIA						TIPOS DE VARIAVEIS
+VAR									INTEIRO
+	NOTA1 = REAL					REAL
+	NOTA2 = REAL					BOOLEANA (LOGICO - V OU F)
+	NOTA3 = REAL					CARACTERE
+	MEDIA = REAL					STRING
+INICIO
+	LEIA (NOTA1, NOTA2, NOTA3)
+	MEDIA = (NOTA1 + NOTA2 + NOTA3)/3
+	IMPRIMA ("A MÉDIA É: ", MEDIA)
+FIM
+----------------------------------
+ALGORITMO MEDIA
+VAR
+	NOTA1, NOTA2, NOTA3, MEDIA = REAL
+INICIO
+	IMPRIMA ("DIGITE A 1ª NOTA")   
+	LEIA (NOTA1)
+	IMPRIMA ("DIGITE A 2ª NOTA")
+	LEIA (NOTA2)
+	IMPRIMA ("DIGITE A 3ª NOTA")
+	LEIA (NOTA3)
+	MEDIA = (NOTA1 + NOTA2 + NOTA3)/3
+	IMPRIMA ("A MÉDIA É: ", MEDIA)	
+FIM		
+-------------------------------------------
+14: SOMA DOS NUMEROS
+-------------------------------------------
+Descrição: Desenvolva um algoritmo que some dois números fornecidos pelo usuário e imprima o valor na tela.
+---------------------------------------
+BOAS PRATICAS DE PROGRAMAÇÃO:
+NOME DE VARIAVEIS
+* NÃO PODE COMEÇAR COM NÚMERO
+* NÃO PODE SER UMA PALAVRA RESERVADA 
+* NÃO PODE TER ACENTOS
+* USAR UM NOME QUE INDIQUE SOBRE O QUE É A VARIAVEL
+* SE USAR MAIS DE UMA PALAVRA PRA IDENTIFICAR A VARIÁVEL, COLOCAR UMA LETRA MAIUSCULA PARA "SEPARAR" AS PALAVRAS
+	EX. nomeUsuario, notaProva, notaTeste
+* SE USAR MAIS DE UMA PALAVRA PRA IDENTIFICAR A VARIÁVEL, COLOCAR UNDERLINE "SEPARAR" AS PALAVRAS
+	EX. nome_usuario, nota_prova, nota_teste
+---------------------------------------
+* SE JÁ EXISTE UMA FUNÇÃO QUE FACILITE O CÁLCULO, VC DEVE USAR
+	MATH.PI = 3,1416
+	MATH.POW = exponenciação	MATH.POW(NUM, EXP)
+	MATH.SQRT = RAIZ QUADRADA 	MATH.SQRT(NUM)
+-----------------------------------
+Imprima("digite o raio")
+Leia raio
+areaCirculo = 3,1416*raio*raio 
+areaCirculo = math.pi*(math.pow(raio,2)
+-----------------------------------
+IMPRIMA("DIGITE O NUMERO")
+LEIA numero
+IMPRIMA ("DIGITE O EXPOENTE")
+LEIA expoente
+potencia=math.pow(numero, expoente)
+IMPRIMA("A potencia do numero é: ", potencia)
+---------------------------
+ALGORITMO RAIZ_QUADRADA
+VAR	
+	NUM, RAIZ = REAL
+INICIO
+	IMPRIMA ("DIGITE O NUMERO")
+	LEIA NUM							RAIZ=MATH.SQRT(NUM)				
+	IMPRIMA ("A RAIZ DO NÚMERO É ", RAIZ)	
+FIM
+----------------------------
+15: CALCULO DE IDADE
+-------------------------------------------
+Descrição: Desenvolva um algoritmo que pergunte ao usuário o ano atual e o seu ano de nascimento e calcule sua idade. Em seguida mostre o valor na tela.
+---------------------------------------
+ALGORITMO IDADE
+VAR
+	idade, anoAtual, anoNasc = inteiro
+INICIO
+	IMPRIMA("Digite o ano atual")
+	LEIA (anoAtual)
+	IMPRIMA("Digite o ano de nascimento")
+	LEIA (anoNasc)
+	idade = anoAtual-anoNasc
+	IMPRIMA("A idade é ", idade)
+FIM
+----------------------------
+16: OLA_USUARIO
+-------------------------------------------
+Descrição: Desenvolva um algoritmo que pergunte ao usuário o seu nome e imprima na tela "Olá, <nome digitado>"
+---------------------------------------
+ALGORITMO OLA_USUARIO	
+VAR					
+	nome=string
+INICIO
+	IMPRIMA("Digite seu nome: ")
+	LEIA (nome)
+	IMPRIMA ("Olá, ", nome)
+FIM					
+					
+imprima ("Olá," nome) error			<- Errado
+imprima ("Olá", nome) Oláfulano		<- Errado, tudo junto
+imprima ("Olá,", nome)Olá,fulano	<- Meio certo, porém junto
+imprima ("Olá, ", nome) Olá, Fulano <- Mundo perfeito
+
+----------------------------
+17: CALCULO SALARIO LIQUIDO
+-------------------------------------------
+Descrição: Desenvolva um algoritmo que pergunte ao usuário o seu salário e calcule o salario liquido de acordo com as informações abaixo:
+DESCONTO VT = 6% 				= 0,06     VT=SALBRUTO*0,06
+DESCONTO INSS = 11%				= 0,11
+DESCONTO DE TICKET = 4%			= 0,04
+DESCONTO PLANO DE SAUDE = 10%	= 0,10
+								DESCONTOS(VT+INSS+TICKET+PSAU)
+								SALIQ=SALBRUTO-DESCONTOS
+IMPRIMA NA TELA: 	SALARIO BRUTO,
+					VALOR DOS DESCONTOS
+					SALARIO LIQUIDO
+---------------------------------------
+ALGORITMO CALCULO_SALARIO
+VAR
+	salBruto, salLiq, descontos, vt, inss, plano_saude, ticket = real
+INICIO
+	IMPRIMA ("Digite seu salário bruto")
+	LEIA salBruto
+	vt = salBruto*0,06
+	inss = salBruto*0,11
+	plano_saude = salBruto*0,10
+	ticket = salBruto*0,04
+	descontos=(vt + inss + plano_saude + ticket)
+	salLiq = salBruto - descontos
+	IMPRIMA ("O salário bruto é: ", salBruto)
+	IMPRIMA ("O valor dos descontos é: ", descontos)
+	IMPRIMA ("O salário líquido é: ", salLiq)
+FIM 

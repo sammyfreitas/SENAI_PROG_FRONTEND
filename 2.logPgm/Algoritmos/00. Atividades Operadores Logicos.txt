@@ -1,0 +1,87 @@
+OPERADORES 
+LOGICOS
+
+
+NÃO - INVERTER A OPERAÇÃO 
+NÃO) ADRIANA HOJE TEM VOZ
+(NÃO)ADRIANA NÃO TINHA VOZ ONTEM
+
+E (CONJUNÇÃO) TODA VEZ QUE TIVER "E"
+PARA SER VERDADEIRO, TODAS AS OPÇÕES DEVERÃO SER VERDADEIRAS
+
+EX. VOCÊ GOSTA DE SORVETE E PIZZA (V)
+                    (V)      (V)
+			YURI    (V)      (F)   (F)
+	TABELA VERDADE	
+			
+			JILO "E" MAXIXE
+	CARLA	(V)    		(V)		V
+	WALDSON (V)			(F)		F
+	ADRIANA (F)			(V)		F
+	YURI	(F)			(F)		F
+	
+	E - SÓ É VERDADEIRO QUANDO TODOS SÃO VERDADEIROS
+	
+		JILO E MAXIXE E QUIABO 
+		V		V 		V 		V
+		V		V 		F		F
+		V		F		V		F
+		V 		F		F		F 
+		F 		V 		V 		F
+		F		V		F		F
+		F		F 		V		F
+		F		F		F		F
+		
+		
+		
+	OU - BASTA UMA OPÇÃO SER VERDADEIRA
+		
+			PIZZA OU LASANHA
+			V 			V 		V
+			V			F		V 
+			F			V 		V
+			F			F 		F 
+		
+		
+		JILO OU MAXIXE OU QUIABO 
+		V		V 			V 		V
+		V		V 			F		V
+		V		F			V		V	
+		V 		F			F		V 
+		F 		V 			V 		V
+		F		V			F		V
+		F		F 			V		V
+		F		F			F		F
+
+
+		NÃO
+		V		F
+		F		V
+		
+		
+		
+		QUIABO E PIZZA 		R	OU SORVETE		QUIABO E PIZZA OU SORVETE
+		V		V 			V		V 			V 
+		V		V 			V		F			V 
+		V		F			F		V			V 
+		V 		F			F		F		 	F 
+		F 		V 			F		V 			V 
+		F		V			F		F			F
+		F		F 			F		V			V 
+		F		F			F		F			F
+		
+		
+		OU / OR - É verdadeiro quando uma opção for verdadeira
+		XOR - NÃO EXCLUSIVO - É verdadeiro quando uma opção for verdadeira, mas não aceita 2 verdadeiros. Somente um. 
+		
+		QUIABO OU PIZZA 	OU		S   NÃO SORVETE		QUIABO OU PIZZA OU NÃO SORVETE
+		V		V 			V 		V 	F						V  
+		V		V 			V 		F 	V 		 				V 
+		V		F			V 		V 	F 		 				V 
+		V 		F			V 		F 	V 	 	 				V
+		F 		V 			V 		V 	F 		 				V 
+		F		V			V 		F	V 						V 
+		F		F 			F 		V 	F 		 				F 	
+		F		F			F		F 	V 						V
+		
+		

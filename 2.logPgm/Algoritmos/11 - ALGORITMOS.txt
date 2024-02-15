@@ -1,0 +1,457 @@
+ALGORITMOS COM LAÇOS DE REPETIÇÃO
+----------------------------------
+38)A)
+ALGORITMO  IDADE_MEDIA_ALUNOS_BAIXINHOS
+VAR
+	ALUNO, ALTURA, IDADE, MEDIA_IDADE, MEDIA_ALTURA: INTEIRO
+INICIO
+	ALTURA=0
+	IDADE=0 
+	MEDIA_ALTURA=0
+	MEDIA_IDADE=1
+	PARA CONT DE 1 A 45 FAÇA
+		IMPRIMA("DIGITE A IDADE DO ALUNO")
+		LEIA(IDADE)
+		IMPRIMA("DIGITE A ALTURA DO ALUNO")
+		LEIA (ALTURA)
+		SE (ALTURA < 1,70) ENTAO	
+			SOMA_ALTURA = ALTURA + SOMA_ALTURA
+			MEDIA_IDADE = IDADE + MEDIA_IDADE
+			ALUNO = ALUNO + 1
+		FIM_SE
+		CONT = CONT + 1
+	FIM_PARA
+	MEDIA_IDADE = MEDIA_IDADE / ALUNO
+	MEDIA_ALTURA = SOMA_ALTURA / ALUNO
+	IMPRIMA ("A idade média dos alunos com menos de 1,70 é: ", MEDIA_IDADE)
+	IMPRIMA ("A altura média dos alunos com menos de 1,70 é: ", MEDIA_ALTURA)
+FIM
+--------------------------------------------
+38)B) A altura média dos alunos com mais de 20 anos
+		SE (IDADE > 20) ENTAO
+		
+ALGORITMO  ALTURA_MEDIA_ALUNOS_20+
+VAR
+	ALUNO, ALTURA, IDADE, MEDIA_IDADE, MEDIA_ALTURA: INTEIRO
+INICIO
+	ALTURA=0
+	IDADE=0 
+	MEDIA_ALTURA=0
+	MEDIA_IDADE=1
+	PARA CONT DE 1 A 45 FAÇA
+		IMPRIMA("DIGITE A IDADE DO ALUNO")
+		LEIA(IDADE)
+		IMPRIMA("DIGITE A ALTURA DO ALUNO")
+		LEIA (ALTURA)
+		SE (IDADE > 20) ENTAO	
+			SOMA_ALTURA = ALTURA + SOMA_ALTURA
+			MEDIA_IDADE = IDADE + MEDIA_IDADE
+			ALUNO = ALUNO + 1
+		FIM_SE
+		CONT = CONT + 1
+	FIM_PARA
+	MEDIA_IDADE = MEDIA_IDADE / ALUNO
+	MEDIA_ALTURA = SOMA_ALTURA / ALUNO
+	IMPRIMA ("A altura média dos alunos com MAIS de 20 anos é: ", MEDIA_ALTURA)
+FIM
+
+------------------------------------
+Exercícios de Fixação de Algoritmos
+
+Ex 12 (APOSTILA)
+39) Faça um algoritmo que leia uma temperatura em graus Celsius e apresente-a
+convertida em graus Fahrenheit. 
+A fórmula de conversão é: F = (9 * C + 160) / 5, 
+na qual F é a temperatura em Fahrenheit e C é a temperatura em Celsius;
+--------------------------------------------
+ALGORITMO CONVERSAO_CELSIUS_EM_FARENHEIT
+VAR
+	tempCelsius, tempFarenheit: real
+INICIO
+	IMPRIMA("Digite a temperatura em graus Celsius: ")
+	LEIA(tempCelsius)
+	tempFarenheit = (9 * tempCelsius + 160) / 5
+	IMPRIMA("A temperatura em Farenheit é: ", tempFarenheit)
+	IMPRIMA("-------------CONVERSAO DE TEMPERATURA--------------")
+	IMPRIMA("             CELSIUS: ", tempCelsius, "ºC")
+	IMPRIMA("           FARENHEIT: ", tempFarenheit, "ºF")
+	IMPRIMA("---------------------------------------------------")
+FIM
+
+CONSOLE (TELA DO USUÁRIO:
+
+Digite a temperatura em graus Celsius: 35
+A temperatura em Farenheit é: 95ºF
+
+Digite a temperatura em graus Celsius: 35
+-------------CONVERSAO DE TEMPERATURA--------------"
+             CELSIUS: ", 35ºC
+           FARENHEIT: ", 95ºF
+---------------------------------------------------"
+
+
+Ex 13 (APOSTILA)
+40)  Faça um algoritmo que leia uma temperatura em Fahrenheit e a apresente
+convertida em graus Celsius. A fórmula de conversão é C = (F – 32) * ( 5 / 9), na qual F é a temperatura em Fahrenheit e C é a temperatura em Celsius.
+
+--------------------------------------------
+ALGORITMO CONVERSAO_CELSIUS_EM_FARENHEIT
+VAR
+	tempCelsius, tempFarenheit: real
+INICIO
+	IMPRIMA("Digite a temperatura em graus Farenheit: ")
+	LEIA(tempFarenheit)
+	tempCelsius = (tempFarenheit - 32 *5)/9
+	IMPRIMA("A temperatura em Farenheit é: ", tempFarenheit)
+	IMPRIMA("-------------CONVERSAO DE TEMPERATURA--------------")
+	IMPRIMA("           FARENHEIT: ", tempFarenheit, "ºF")
+	IMPRIMA("             CELSIUS: ", tempCelsius, "ºC")
+	IMPRIMA("---------------------------------------------------")
+FIM
+
+--------------------------------------------
+Ex 18 (APOSTILA)
+41)  Faça um algoritmo que leia os valores de COMPRIMENTO, LARGURA e
+ALTURA e apresente o valor do volume de uma caixa retangular. 
+Utilize para o cálculo a fórmula VOLUME = COMPRIMENTO * LARGURA * ALTURA.  
+
+
+TENTATIVA ALUNO 1
+ALGORITMO CAIXA_RETANGULAR
+VAR
+    COMPRIMENTO, LARGURA, ALTURA, VOLUME = REAL
+INICIO 
+	LEIA LARGURA
+	LEIA ALTURA
+	LEIA COMPRIMENTO	
+	VOLUME = ALTURA * COMPRIMENTO * LARGURA
+	IMPRIMA("O volume da caixa é: ", VOLUME)
+FIM
+
+
+TENTATIVA ALUNO 2
+ALGORITIMO volumeCaixa			   
+VAR
+      comprimentoCaixa=real;
+      larguraCaixa=real;
+      alturaCaixa=real;
+      volumeCaixa=real;
+INICIO
+	LEIA (comprimentoCaixa)
+	LEIA (larguraCaixa)
+	LEIA(alturaCaixa )
+	volumeCaixa = comprimentoCaixa * larguraCaixa * alturaCaixa
+	IMPRIMA("O volume é:", volumeCaixa);
+FIM
+--------------------------------------------
+TENTATIVA ALUNO 3
+
+ALGORITIMO volumeCaixa
+VAR
+	COMPRIMENTO, LARGURA, ALTURA, VOLUME: REAL 
+INICIO 
+	IMPRIMA("INFORME O COMPRIMENTO DA CAIXA RETANGULAR:  ")
+	LEIA(COMPRIMENTO)
+	IMPRIMA("INFORME A LAGURA DA CAIXA RETANGULAR:  ")
+	LEIA(LARGURA)
+	IMPRIMA("INFORME A ALTURA DA CAIXA RETANGULAR:  ")
+	LEIA(ALTURA)
+	VOLUME = COMPRIMENTO * LARGURA * ALTURA 
+	IMPRIMA("-------------------VOLUME---------------")
+	IMPRIMA(" O VOLUME DA CAIXA RETANGULAR É:   ", VOLUME)
+FIM
+
+-------------------VOLUME---------------
+O VOLUME DA CAIXA RETANGULAR É:  34
+
+
+
+TENTATIVA ALUNO 4
+algoritimo C_L_A
+var
+	comprimento, largura, altura, volume: real
+inicio
+	imprimir("Digite Comprimento: ")
+	ler (comprimento)
+	imprimir("Digite Largura: ")
+	ler(largura)
+	imprimir("Digite Altura: ")
+	ler(altura)
+	volume = comprimento*largura*altura
+	imprimir("O volume da sua forma é: ",volume)
+fim
+
+O volume da sua forma é: 34
+--------------------
+TENTATIVA ALUNO 5
+algoritmo area_forma
+var
+	comprimento, largura, altura, resultado = real
+INICIO
+	imprima ("digite o comprimento a da caixa") 
+	leia comprimento
+	imprima ("digite a largura da caixa") 
+	leia largura
+	imprima ("digite a altura da caixa") 
+	leia altura
+	resultado = comprimento * largura * altura 
+	imprima("O volume da caixa é " ,resultado)
+FIM	
+	NOME = Pedro
+	SOBRENOME = Henrique
+	imprima (NOME, " ", SOBRENOME)
+	nomeCompleto = NOME + " " + SOBRENOME
+	nomeCompleto = Pedro Henrique
+	imprima(nomeCompleto)
+	
+------------------
+Ex 25 (APOSTILA)
+42) Faça um algoritmo que pergunte ao usuário dois números inteiros (Int1 e Int2) e imprima o quociente e o resto da divisão inteira de Int1 por Int2. 
+QUOCIENTE: INTEIRO
+RESTO: 
+
+ALGORITMO CALCULO_QUOCIENTE_RESTO
+VAR
+	int1, int2, quociente, resto: real
+INICIO
+	IMPRIMA("Digite o primeiro número: ")
+	LEIA Int1
+	IMPRIMA("Digite o segundo número: ")
+	LEIA Int2							
+	quociente = int(int1/int2)   //int( calculo ) = parte inteira do cálculo
+	resto=int1%int2
+	IMPRIMA("O quociente da divisão é: ", quociente)
+	IMPRIMA("O resto da divisão é: ", resto)
+FIM
+---------------------------------
+Ex 33 (APOSTILA)
+43)  O sistema de avaliação de determinada disciplina, é composto por três provas. 
+	A primeira prova tem peso 2, 
+	a segunda tem peso 3 
+	e a terceira tem peso 5. 
+Faça um algoritmo para calcular a média final de um aluno desta disciplina.
+	2 * p1
+	3 * p2
+	5 * p3
+	media = ( (2 * p1) + (3 * p2) + (5 * p3) ) / 10
+------------------------------------------------
+ALGORITMO MEDIA_PESOS_DIFERENTES
+VAR
+	p1, p2, p3, media = real
+INICIO
+	IMPRIMA ("Digite a nota da primeira prova: ")
+	leia p1
+	imprima ("Digite a nota da segunda prova:  ")
+	leia p2
+	imprima ("Digite a nota da terceira prova: ")
+	leia p3
+	media = ( (2*p1) + (3*p2) + (5*p3) )/10
+	imprima ("A média do aluno é: ",media)
+FIM
+
+------------------
+TENTATIVA ALUNO 6
+algoritmo media_provas
+var
+p1, p2, p3, media = real
+inicio
+    imprima ("Qual sua nota na primeira prova? ")
+	leia p1
+	imprima ("Qual sua nota na segunda prova? ")
+	leia p2
+	imprima ("Qual sua nota na terceira prova? ")
+	leia p3
+	media = ( (2*p1) + (3*p3) + (5*p3) )/10
+	imprima ("Sua média geral é: ",media)
+fim
+-------------------------------
+44) Uma empresa de vendas tem três corretores. 
+A empresa paga ao corretor uma comissão calculada de acordo com o valor de suas vendas. 
+Se o valor da venda de um corretor for maior que R$ 50.000.00 a comissão será de 12% do valor vendido.  (0,12)
+Se o valor da venda do corretor estiver entre R$ 30.000.00 e R$ 50.000.00 (incluindo extremos) a comissão será de 9.5%.  9,5%= 0,095
+Em qualquer outro caso, a comissão será de 7%. 7%= 0,07
+
+Escreva um algoritmo que gere um relatório contendo nome, valor da venda e comissão de cada um dos corretores. O relatório deve mostrar também o total de vendas da empresa.
+------------------------------------------------
+corretor1, corretor2, corretor3 = string
+venda1, venda2, venda3, total = real
+comissao1, comissao2, comissao3 = real
+	se (venda > 50000) entao
+		comissao = venda * 0,12
+	senao
+		se (venda >= 30000) e (venda <=50000) entao
+			comissao = venda * 0,095
+		senao 
+			comissao = venda * 0,07
+------------------------------------------------
+ALGORITMO CALCULO_COMISSAO
+VAR
+	corretor1, corretor2, corretor3 = string
+	venda1, venda2, venda3, total = real
+	comissao1, comissao2, comissao3 = real
+INICIO
+	//CALCULO DA COMISSAO DO PRIMEIRO CORRETOR
+	IMPRIMA("Digite o nome do corretor: ")
+	LEIA corretor1
+	IMPRIMA("Digite o valor das vendas desse corretor: ")
+	LEIA venda1
+	se (venda1 > 50000) entao
+		comissao1 = venda1 * 0,12
+	senao
+		se (venda1 >= 30000) e (venda1 <=50000) entao
+			comissao1 = venda1 * 0,095
+		senao 
+			comissao1 = venda1 * 0,07
+		fim_se
+	fim_se
+	
+	//CALCULO DA COMISSAO DO SEGUNDO CORRETOR
+	IMPRIMA("Digite o nome do corretor: ")
+	LEIA corretor2
+	IMPRIMA("Digite o valor das vendas desse corretor: ")
+	LEIA venda2
+	se (venda2 > 50000) entao
+		comissao2 = venda2 * 0,12
+	senao
+		se (venda2 >= 30000) e (venda1 <=50000) entao
+			comissao2 = venda2 * 0,095
+		senao 
+			comissao2 = venda2 * 0,07
+		fim_se
+	fim_se
+	
+	
+	IMPRIMA("Digite o nome do corretor: ")
+	LEIA corretor3
+	IMPRIMA("Digite o valor das vendas desse corretor: ")
+	LEIA venda3
+	se (venda3 > 50000) entao
+		comissao3 = venda3 * 0,12
+	senao
+		se (venda3 >= 30000) e (venda3 <=50000) entao
+			comissao3 = venda3 * 0,095
+		senao 
+			comissao3 = venda3 * 0,07
+		fim_se
+	fim_se
+	
+	total = venda1 + venda2 + venda3
+	
+	IMPRIMA("==========================CALCULO COMISSÃO=====================")
+	IMPRIMA("NOME: ",corretor1, "Valor da Venda: R$", venda1, "Comissão: R$ ")
+	IMPRIMA("NOME: ",corretor2, "Valor da Venda: R$", venda2, "Comissão: R$ ")
+	IMPRIMA("NOME: ",corretor3, "Valor da Venda: R$", venda3, "Comissão: R$ ")
+	IMPRIMA("Total de Vendas: R$", total)
+	IMPRIMA("===============================================================")
+
+FIM
+
+COM ESTRUTURA DE REPETIÇÃO
+
+ALGORITMO CALCULO_COMISSAO
+VAR
+	cont=inteiro
+	corretor = string
+	venda, total = real
+	comissao= real
+INICIO
+	IMPRIMA("==========================CALCULO COMISSÃO=====================")
+	PARA cont de 1 até 3 FAÇA
+		IMPRIMA("Digite o nome do corretor: ")
+		LEIA corretor
+		IMPRIMA("Digite o valor das vendas desse corretor: ")
+		LEIA venda
+		total=0
+		se (venda > 50000) entao
+			comissao = venda * 0,12
+		senao
+			se (venda >= 30000) e (venda <=50000) entao
+				comissao = venda * 0,095
+			senao 
+				comissao = venda * 0,07
+			fim_se
+		fim_se
+		IMPRIMA(("NOME: ",corretor, "Valor da Venda: R$", venda, "Comissão: R$ ")
+		IMPRIMA("===============================================================")
+		total = total + venda
+	FIM_PARA
+	IMPRIMA("Total de Vendas: R$", total)
+	IMPRIMA("===============================================================")
+FIM
+		
+		==========================CALCULO COMISSÃO=====================
+		Digite o nome do corretor: João Pedro	
+		Digite o valor das vendas desse corretor: R$ 135000,00
+	
+		NOME: João Pedro  Valor da Venda: R$ 135000,00   Comissão: R$ 16.200,00
+		===============================================================
+		Digite o nome do corretor: Lucas Gabriel	
+		Digite o valor das vendas desse corretor: R$ 45000,00
+		
+		NOME: Lucas Gabriel  Valor da Venda: R$ 45000,00   Comissão: R$ 4.275,00
+		===============================================================
+		Digite o nome do corretor: Salomão Cristiano
+		Digite o valor das vendas desse corretor: R$ 25000,00
+		
+		NOME: Salomão Cristiano  Valor da Venda: R$ 2500,00   Comissão: R$ 1.750,00
+		===============================================================
+		Total de Vendas: R$ 205.000,00
+		===============================================================
+--------------------------------------------------		
+Ex .100	
+45) Crie um programa que peça 10 números inteiros e apresente: a média, o maior e o menor
+ALGORITMO NUM_INT
+VAR
+	cont, num, maior, menor: inteiro
+	media: real
+INICIO
+	cont=0
+	maior = 0							
+	menor = 99999
+	media=0
+	PARA cont de 1 até 10 faça
+		IMPRIMA("Digite um numero inteiro: ")		num = 11
+		LEIA (int(num))
+		se (maior < num) entao
+			maior=num								maior=18
+		fim_se
+		se (menor > num) entao						menor=1
+			menor=num
+		fim_se
+		MEDIA=MEDIA+NUM					3 + 6 + 1 + 17 + 2 + 4 + 7 + 18 + 5 + 11 = 75
+	FIM_PARA
+	media = media/10			75/10 = 7,5
+	IMPRIMA("A média dos números digitados é: ", media)
+	IMPRIMA("O maior número digitado é: ", maior)
+	IMPRIMA("O menor número digitado é: ", menor)
+FIM
+
+A média dos números digitados é: 7,5
+O maior número digitado é: 18
+O menor número digitado é: 1
+
+
+--------------------------------------------------
+
+46)Faça um algoritmo que imprima os múltiplos positivos de 7, inferiores a 1000. 
+--------------------------------------------------
+PARA CASA:
+Ex. 102. 
+47) Um hotel com 30 quartos cobra R$ 50,00 por diária e mais uma taxa de 
+serviços. A taxa de serviços é de: 
+• R$ 4,00 por diária, se o número de diárias for < 15; 
+• R$ 3,60 por diária, se o número de diárias for = 15; 
+• R$ 3,00 por diária, se o número de diárias for > 15. 
+Faça um algoritmo que imprima o nome e o total da conta de cada cliente do hotel. 
+Imprima também o total ganho pelo hotel. 
+
+
+48) Escreva um algoritmo que peça dois numeros para o usuario e escolha entre as opções:
+1. Somar
+2. Diminuir
+3. Multiplicar
+4. Dividir
+5. Sair
+Em seguida imprima a notação do cálculo e a resposta na tela. Faça quantas vezes o usuário quiser até ele escolher opção 5. Sair. Considere que um número diferente das opções será 'opção invalida - tente novamente'
+SE ENTAO SENAO
+CASO 

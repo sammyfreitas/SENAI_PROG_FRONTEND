@@ -1,0 +1,447 @@
+* CORREÇÃO EXERCÍCIOS 
+* MAIS EXERCÍCIOS DE ALGORITMOS
+* ESTRUTURA SE-ENTÃO-SENÃO
+================================
+PARA SEXTA-FEIRA
+* ESTRUTURA FAÇA (FOR)
+* ESTRUTURA ENQUANTO (WHILE)
+=======================================================================
+18) Faça um algoritmo que leia a velocidade de um veículo em km/h e calcule e imprima a velocidade em m/s (metros por segundo).  
+		KM/H -> M/S   - dividir por 3,6
+		M/S -> KM/H   - multiplicar por 3,6
+=======================================================================
+ALGORITMO CONVERSAO_VELOCIDADE
+VAR
+	kmh, ms:real
+INICIO
+	LEIA (kmh)												kmh = 70
+	ms = kmh /3,6											ms = 70/3,6 = 19,44
+	IMPRIMA("A velocidade  ", kmh, " km/h´em m/s é: ", ms)
+FIM
+
+	=============================CONSOLE==============================
+	| 
+	| A velocidade 70  km/h´em m/s é: 19,44
+	|
+	===================================================================
+
+
+=======================================================================
+19) Sabendo que um veiculo faz 15 km/l, leia a distância e calcule quantos litros serão necessários na viagem.
+=======================================================================
+ALGORITMO CONSUMO_COMBUSTIVEL
+VAR
+	distancia, litros: real
+INICIO
+	LEIA (distancia)						//distancia=446,2
+	litros=distancia/15						//litros = 446,2/15 = 29,7
+	IMPRIMA("Serão necessários ",litros,"l de combustível para uma viagem de ",distancia,"KM")
+FIM
+
+	=============================CONSOLE==============================
+	| 
+	| Serão necessários 29,7l de combustível para uma viagem de 446,2KM
+	|
+	===================================================================
+
+=======================================================================
+20) Sabendo que o Honda Fit faz 15 km/l e o tanque possui a capacidade de 46 litros, leia a distância que será percorrida e calcule quantos litros e quantas vezes ele precisará abastecer na viagem.
+			ler distancia
+			qtde_comb = distancia / 15     #km/l			
+			se qtde_comb > 46
+				abastecimento = qtde_comb / 46
+				int (abastecimento)+1
+				===================CALCULO DE COMBUSTIVEL===================
+					DISTANCIA PERCORRIDA		: <variavel> "km"
+					LITROS DE COMB NECESSÁRIOS	: <variavel> "l"
+					ABASTECIMENTOS NECESSÁRIOS	: <variavel>
+				=========================================================
+ALGORITMO ABASTECIMENTO
+VAR
+	distancia, qtde_comb, abastecimento: real
+INICIO
+	LEIA (distancia)					#distancia= 1446,2
+	qtde_comb = distancia/15			#qtde_comb=1446,2/15 = 96,41
+	abastecimento = qtde_comb/46		#abastecimento = qtdade de combustível (96,41 / 
+	se (qtde_comb%46=0) entao				#capacidade do tanque (46) = 2,09
+		IMPRIMA("===================CALCULO DE COMBUSTIVEL===================")
+		IMPRIMA("		DISTANCIA PERCORRIDA		: ", distancia,"km")
+		IMPRIMA("		LITROS DE COMB NECESSÁRIOS	: ", qtde_comb,"l")
+		IMPRIMA("		ABASTECIMENTOS NECESSÁRIOS	: ", abastecimento")
+				=========================================================")
+		se (qtde_comb>46) entao
+			abastecimento = int(abastecimento)+1		//abastecimento=int(2,09)+1=3
+		senao
+			abastecimento = 1
+		fim_se
+		IMPRIMA("===================CALCULO DE COMBUSTIVEL===================")
+		IMPRIMA("		DISTANCIA PERCORRIDA		: ", distancia,"km")
+		IMPRIMA("		LITROS DE COMB NECESSÁRIOS	: ", qtde_comb,"l")
+		IMPRIMA("		ABASTECIMENTOS NECESSÁRIOS	: ", abastecimento")
+		IMPRIMA("=========================================================")
+	fim_se
+FIM
+	=============================CONSOLE==============================
+	| ===================CALCULO DE COMBUSTIVEL================
+	|		DISTANCIA PERCORRIDA		: 1446,2km
+	|		LITROS DE COMB NECESSÁRIOS	: 96,4l
+	|		ABASTECIMENTOS NECESSÁRIOS	: 3
+	| =========================================================
+	| 
+	|
+	===================================================================
+
+
+=======================================================================
+21) Faça um algoritmo que leia um número N e imprima “F1”, “F2” ou “F3”, conforme 
+a condição: 
+• “F1”, se N <= 10 
+• “F2”, se N > 10 e N <= 100 
+• “F3”, se N > 100
+
+ALGORITMO F1_F2_F3
+VAR
+	N: real
+INICIO
+	LEIA (N)
+	SE (N<=10) ENTAO
+		IMPRIMA("F1")
+	SENAO
+		SE (N>10) E (N<=100) ENTAO
+			IMPRIMA("F2")
+		SENAO
+			IMPRIMA("F3”)
+		FIM_SE
+	FIM_SE
+FIM
+						
+	//FUNÇÃO JAVASCRIPT PARA O RANGE ENTRE 2 VALORES:	return n>10 && N<=100
+
+=======================================================================
+22)Construa um algoritmo que receba como entrada três valores e os imprima em 
+ordem crescente. 
+
+ALGORITMO CRESCENTE
+VAR
+	valor1, valor2, valor3 = real
+INICIO
+	LEIA (valor1)						//valor1 = 		valor2= 		valor3= 
+	LEIA (valor2)						//valor1 = 		valor2= 		valor3= 
+	LEIA (valor3)						//valor1 = 		valor2= 		valor3= 
+	SE (valor1 <= valor2) E (valor1 <= valor3) ENTAO	valor1(menor de todos)
+		SE (valor2 <=valor3) ENTAO				valor1= 0 valor2= 4 valor3= 3
+			IMPRIMA (valor1, "-", valor2, "-", valor3)
+		SENAO 
+			IMPRIMA (valor1, "-", valor3, "-", valor2)
+		fim_se
+	SENAO
+		SE (valor2 <= valor1) E (valor2 <= valor3) ENTAO
+			SE (valor1 <= valor3) ENTAO	
+				IMPRIMA (valor2, "-", valor1, "-", valor3)
+			SENAO
+				IMPRIMA (valor2, "-", valor3, "-", valor1)
+			FIM_SE
+		SENAO
+		SE (valor3 <= valor1) E (valor3 <= valor2) ENTAO
+			SE (valor1 <= valor2) ENTAO	
+				IMPRIMA (valor3, "-", valor1, "-", valor2)
+			SENAO
+				IMPRIMA (valor3, "-", valor2, "-", valor1)
+			FIM_SE
+		FIM_SE
+	FIM_SE	
+FIM
+
+
+
+=======================================================================
+23)Construa um algoritmo que receba como entrada três valores e os imprima em 
+ordem decrescente.
+
+ALGORITMO CRESCENTE
+VAR
+	valor1, valor2, valor3 = real
+INICIO
+	LEIA (valor1)						//valor1 = 		valor2= 		valor3= 
+	LEIA (valor2)						//valor1 = 		valor2= 		valor3= 
+	LEIA (valor3)						//valor1 = 		valor2= 		valor3= 
+	SE (valor1 >= valor2) E (valor1 >= valor3) ENTAO	valor1(menor de todos)
+		SE (valor2 >=valor3) ENTAO				valor1= 0 valor2= 4 valor3= 3
+			IMPRIMA (valor1, "-", valor2, "-", valor3)
+		SENAO 
+			IMPRIMA (valor1, "-", valor3, "-", valor2)
+		fim_se
+	SENAO
+		SE (valor2 >= valor1) E (valor2 >= valor3) ENTAO
+			SE (valor1 <= valor3) ENTAO	
+				IMPRIMA (valor2, "-", valor1, "-", valor3)
+			SENAO
+				IMPRIMA (valor2, "-", valor3, "-", valor1)
+			FIM_SE
+		SENAO
+		SE (valor3 >= valor1) E (valor3 >= valor2) ENTAO
+			SE (valor1 >= valor2) ENTAO	
+				IMPRIMA (valor3, "-", valor1, "-", valor2)
+			SENAO
+				IMPRIMA (valor3, "-", valor2, "-", valor1)
+			FIM_SE
+		FIM_SE
+	FIM_SE	
+FIM
+=======================================================================
+24) Escreva um algoritmo que determine o número de dias que uma pessoa já viveu. 
+Considere que um mês tenha 30 dias. 
+		ANO ATUAL - ANO DE NASCIMENTO = ANOS DE VIDA					//35
+		MES ATUAL - MES DE NASCIMENTO = MESES DE VIDA					//9
+		ULTIMO DIA DO MES ATUAL  - DIA DE NASCIMENTO = DIAS DE VIDA		//12
+	TOTAL DE DIAS = (ANOS DE VIDA*365) + (MESES DE VIDA*30) + DIAS DE VIDA
+=======================================================================
+ALGORITMO DIAS_VIVIDOS
+VAR
+	ANO_ATUAL, ANO_NASC, MES_ATUAL, MES_NASC, ULT_DIA, DIA_NASC, TOTAL: INTEIRO
+INICIO
+	//SOLICITAÇÃO DE DADOS DO NASCIMENTO DO USUÁRIO
+	IMPRIMA("Digite o ano de nascimento com 4 dígitos") 
+	LEIA ANO_NASC
+	IMPRIMA("Digite o mês de nascimento")
+	LEIA MES_NASC
+	IMPRIMA("Digite o dia de nascimento")
+	LEIA DIA_NASC
+
+	//SOLICITAÇÃO DA DATA ATUAL         
+	IMPRIMA("Digite o ano atual com 4 dígitos")
+	LEIA ANO_ATUAL
+	IMPRIMA("Digite o mês atual")
+	LEIA MES_NASC
+	IMPRIMA("Digite o último dia do mês")
+	LEIA ULT_DIA
+
+	//CALCULO DE DIAS CONSIDERANDO O NUM DE ANOS X 365, NUM DE MESES X 30 + DIAS
+	TOTAL =((ANO_ATUAL -ANO_NASC)* 365)+ ((MES_ATUAL - MES_NASC)*30)+ (ULT_DIA - DIA_NASC)
+	
+	IMPRIMA("O número de dias vividos da pessoa é: ",total)
+	
+	IMPRIMA("===================CALCULO DE DIAS===================")
+	IMPRIMA("		DATA DE NASCIMENTO	: ",DIA_NASC,"/",MES_NASC,"/",ANO_NASC)
+	IMPRIMA("		DATA ATUAL			: ",DIA_ATUAL,"/",MES_ATUAL,"/",ANO_ATUAL)
+	IMPRIMA("		DIAS VIVIDOS		: ", abastecimento")
+	IMPRIMA("=========================================================")
+	
+FIM
+						CONSOLE (TELA DO USUÁRIO)
+			
+			===================CALCULO DE DIAS===================
+				DATA DE NASCIMENTO	: 13/06/1978
+				DATA ATUAL			: 27/10/2023
+				DIAS VIVIDOS		: 16572
+			=========================================================
+
+FOR / ENQUANTO
+
+PARA (FOR)			- VAI USAR QUANDO SABE O FINAL -  CONTAR NUMEROS PARES DE 0 A 50
+ENQUANTO (WHILE) 	- VAI USAR QUANDO NÃO SABE O FINAL 
+
+
+Para contador de 1 até 50 faça
+	IMPRIMA("Contador =", contador)
+FimPara
+=========================================
+contador=0
+enquanto (var <= 50) faça
+	IMPRIMA("Contador =", contador)
+	var = var + 1
+fim_enquanto
+=========================================
+25) Faça um algoritmo que imprima os números pares entre 0 e 50.
+
+ALGORITMO PARA_50
+VAR
+   CONT, PAR : INTEIRO
+INICIO
+	IMPRIMA ("0 - ")
+	PARA CONT DE 1 ATÉ 50 FAÇA
+		PAR = CONT%2		
+		SE (PAR = 0) ENTAO
+			IMPRIMA (CONT, " - ")
+		FIM_SE	
+	FIM_PARA	
+FIM
+--------------------------------
+ALGORITMO ENQUANTO_50
+VAR
+	CONT, PAR: INTEIRO
+INICIO
+	CONT = 0
+	ENQUANTO (CONT<=50) FAÇA
+		IMPRIMA (CONT, " - ")
+		CONT = CONT + 2
+	FIM_ENQUANTO
+FIM
+
+=======================CONSOLE===================
+	0 - 2 - 4 - ..... - 50 -
+
+	
+----------------------------------
+26) Faça um algoritmo usando um laço de repetição e imprima na tela a tabuada de 2.
+
+	=========TABUADA=========
+		   2 X 0 = 0 
+		   2 X 1 = 2
+		   2 X 2 = 4
+	==========================		   
+	
+ALUNO 1 - 19:10
+ALGORITIMO tabuada
+VAR
+    tabuadaDeDois = inteiro;
+	multiplicador=inteiro;
+INICIO
+	tabuadaDeDois=0;
+	multiplicador=0
+	enquanto(tabuadaDeDois <= 20) faça;
+		imprima("=========TABUADA=========
+		imprima("2 x ", multiplicador, "=", tabuadaDeDois*
+		imprima("==========================");
+		tabuadaDeDois = tabuadaDeDois + 2
+		multiplicador=multiplicador++
+	fim_enquanto
+FIM
+ 
+=========TABUADA=========
+2 x 0 = 0
+2 x 1 = 2
+
+
+ALUNO 2
+Algoritmo_enquanto
+var
+	cont, num_tab, resp : inteiro
+inicio
+	imprima ("Digite o número da tabuada que deseja: ")
+	leia (num_tab)
+	cont = 0
+	enquanto (cont <= 10) faca
+		resp = num_tab x cont
+		imprima (num_tab, " x ", cont, " = ", resp)
+		cont = cont+1	
+	fim_enquanto
+fim
+
+console:
+2 x 0 = 0		cont = 1
+2 x 1 = 2		cont = 2
+2 x 2 = 4 
+
+ALUNO 3
+algoritmo tabuada2_usando_enquanto
+var
+	cont, resul = inteiro
+inicio
+	cont = 0
+	enquanto (cont <= 10)
+		resul = 2 * cont
+		imprima("2 x ", cont, " = ", resul)
+		cont = cont+1
+	fim enquanto
+
+console
+2 x 1 = 2
+2 x 2 = 4
+...
+2 x 9 = 18
+2 x 10 = 20
+
+=========================================================
+27) Faça um algoritmo usando um laço de repetição e imprima na tela a tabuada de 2.
+
+	=========TABUADA=========
+		   2 X 0 = 0 
+		   2 X 1 = 2
+		   2 X 2 = 4
+	==========================
+	
+ALGORITMO TABUADA_PARA  (11 linhas)
+VAR
+	cont, result = inteiro
+INICIO
+	IMPRIMA("======TABUADA DE 2=========")
+	PARA CONT DE 0 A 10 FAÇA
+		result = 2*cont
+		IMPRIMA("		2 X ",cont, " = ", result)     
+	FIMPARA
+	IMPRIMA("=========================="
+FIM
+
+
+
+
+
+======TABUADA DE 2=========
+		2 X 0 = 0
+		2 X 1 = 2		
+		...
+		2 X 10 = 20
+==========================
+
+
+
+
+
+ALGORITMO TABUADA_ENQUANTO (13 linhas)
+VAR
+	cont, result = inteiro
+INICIO
+	IMPRIMA("======TABUADA DE 2=========")
+	cont=0
+	ENQUANTO CONT <= 10 FAÇA
+		result = 2*cont
+		IMPRIMA("		2 X ",cont, " = ", result) 
+		CONT=CONT++
+	FIMPARA
+	IMPRIMA("=========================="
+FIM
+
+======TABUADA DE 2=========				cont = 0	result = 2x0=0
+		2 X 0 = 0						cont = 1	result = 2x1=2
+		2 X 1 = 2	
+		....
+		2 x 10 = 20
+==========================
+
+
+28) Faça um algoritmo usando um laço de repetição e pergunte ao usuário qual tabuada e imprima na tela. Ao terminar a tabuada, perguntar se desejar fazer outra.
+
+ALGORITMO TABUADA_PARA  (11 linhas)
+VAR
+	cont, num, multip, result = inteiro
+	opcao = caractere
+INICIO
+	opcao=s
+	ENQUANTO OPCAO = "s" ou OPCAO = "S" FAÇA
+		IMPRIMA("Digite a tabuada desejada")
+		LEIA (num)								
+		PARA CONT DE 0 A 10 FAÇA
+			result = num*cont
+			IMPRIMA(num, " X ",cont, " = ", result)     
+		FIMPARA
+		IMPRIMA("=========================="
+		IMPRIMA("Deseja outra tabuada? (S/N)")
+		LEIA(opcao)
+	FIM_ENQUANTO
+FIM
+	
+	
+	
+	
+	
+	
+	
+	
+	IMPRIMA("======TABUADA DE 2=========")
+	PARA CONT DE 0 A 10 FAÇA
+		result = 2*cont
+		IMPRIMA("		2 X ",cont, " = ", result)     
+	FIMPARA
+	IMPRIMA("=========================="
+FIM

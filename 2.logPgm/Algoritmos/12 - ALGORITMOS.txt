@@ -1,0 +1,306 @@
+ALGORITMOS 
+ex 102
+49) Um hotel com 30 quartos cobra R$ 50,00 por diária e mais uma taxa de serviços. A taxa de serviços é de:
+• R$ 4,00 por diária, se o número de diárias for < 15;
+• R$ 3,60 por diária, se o número de diárias for = 15;
+• R$ 3,00 por diária, se o número de diárias for > 15.
+Faça um algoritmo que imprima o nome e o total da conta de cada cliente do hotel.
+Imprima também o total ganho pelo hotel.
+DIARIA 	= CONSTANTE (50,00)
+TX_SERV = REAL
+DIAS	= INTEIRO
+NOME	= STRING
+TOTAL	= REAL
+------------------------------------
+ALGORITMO HOTEL
+CONST
+	DIARIA: REAL
+VAR
+	TOTALCLI, TOTAL_HOTEL: REAL
+	DIAS, QUARTOS: INTEIRO
+	NOME: STRING
+INICIO
+	DIARIA = 50,00
+	IMPRIMA (---------------HOTEL TRANSILVANIA---------------)
+	PARA QUARTOS DE 1 A 30 FAÇA
+		IMPRIMA("Digite o nome do cliente: ")
+		LEIA(nome)
+		IMPRIMA("Digite o número de diárias: ")
+		LEIA(dias)
+		SE (DIAS < 15) ENTAO
+			TOTALCLI = (DIARIA * DIAS)+ (DIAS * 4,00)
+		SENAO
+			SE (DIAS = 15) ENTAO
+				TOTALCLI = (DIARIA * DIAS) + (DIAS * 3,6)
+			SENAO
+				TOTALCLI = (DIARIA * DIAS) + (DIAS * 3,0)
+			FIM_SE
+		FIM_SE
+		TOTAL_HOTEL = TOTAL_HOTEL + TOTALCLI
+	IMPRIMA ("CLIENTE: ", nome)
+	IMPRIMA ("TOTAL CONTA: ", TOTALCLI)
+	FIM_PARA
+	IMPRIMA ("TOTAL DO HOTEL: ", TOTAL_HOTEL)
+	IMPRIMA(---------------------------------------------------)
+FIM
+	
+
+
+
+
+------------------------------------
+50) Escreva um algoritmo que peça dois numeros para o usuario e escolha entre as opções:
+1. Somar
+2. Diminuir
+3. Multiplicar
+4. Dividir
+5. Sair
+Em seguida imprima a notação do cálculo e a resposta na tela. Faça quantas vezes o usuário quiser até ele escolher opção 5. Sair. Considere que um número diferente das opções será 'opção invalida - tente novamente'
+SE ENTAO SENAO
+CASO
+----------------------------------------------------
+ALGORITMO CALCULADORA
+VAR	
+	NUM1, NUM2, CALCULO: REAL
+INICIO
+	OPCAO = 0
+	ENQUANTO OPCAO <> 					/*DIFERENTE != OU <>*/	
+		IMPRIMA("DIGITE O PRIMEIRO NUMERO")
+		LEIA (NUM1)
+		IMPRIMA("DIGITE O SEGUNDO NUMERO")
+		LEIA (NUM2)	
+		IMPRIMA("----------------CALCULADORA----------------")
+		IMPRIMA("----------------01 - SOMAR ----------------")
+		IMPRIMA("----------------02 - SUBTRAIR--------------")
+		IMPRIMA("----------------03 - MULTIPLICAR-----------")
+		IMPRIMA("----------------04 - DIVIDIR---------------")
+		IMPRIMA("----------------05 - SAIR------------------")
+		IMPRIMA("DIGITE A OPÇÃO DESEJADA")
+		LEIA(OPCAO)
+		SE (OPCAO=1) ENTAO
+			CALCULO = (NUM1 + NUM2)
+			IMPRIMA ( NUM1, " + ", NUM2 , " = ", CALCULO)
+			SENAO
+			SE (OPCAO=2) ENTAO
+				CALCULO = (NUM1 - NUM2)
+				IMPRIMA ( NUM1, " - ", NUM2 , " = ", CALCULO)
+				SENAO 
+					SE (OPCAO=3) ENTAO
+					CALCULO = (NUM1 * NUM2)
+					IMPRIMA ( NUM1, " X ", NUM2 , " = ", CALCULO)
+				SENAO
+				SE (OPCAO=4) ENTAO
+					SE NUM2=0)ENTAO
+						IMPRIMA("IMPOSSIVEL CALCULAR DIVISAO DE 0")
+					SENAO
+						CALCULO = (NUM1 / NUM2)
+						IMPRIMA ( NUM1, " / ", NUM2 , " = ", CALCULO)
+						SENAO 
+						SE (OPCAO=5) ENTAO
+							IMPRIMA ("SAINDO DA CALCULADORA")
+						SENAO
+							IMPRIMA ("OPÇÃO INVALIDA")
+						FIM_SE
+					FIM_SE
+				FIM_SE
+			FIM_SE		
+		FIM_SE					
+	FIM_PARA
+FIM
+
+-----------------------
+USANDO SWIT CASE (CASO)
+-----------------------
+
+ALGORITMO CALCULADORA
+VAR	
+	NUM1, NUM2, CALCULO: REAL
+INICIO
+	OPCAO = 0
+	ENQUANTO OPCAO <> 					/*DIFERENTE != OU <>*/	
+		IMPRIMA("DIGITE O PRIMEIRO NUMERO")
+		LEIA (NUM1)
+		IMPRIMA("DIGITE O SEGUNDO NUMERO")
+		LEIA (NUM2)	
+		IMPRIMA("----------------CALCULADORA----------------")
+		IMPRIMA("----------------01 - SOMAR ----------------")
+		IMPRIMA("----------------02 - SUBTRAIR--------------")
+		IMPRIMA("----------------03 - MULTIPLICAR-----------")
+		IMPRIMA("----------------04 - DIVIDIR---------------")
+		IMPRIMA("----------------05 - SAIR------------------")
+		IMPRIMA("DIGITE A OPÇÃO DESEJADA")
+		LEIA(OPCAO)
+		CASO OPCAO = 1:
+			CALCULO = (NUM1 + NUM2)
+			IMPRIMA ( NUM1, " + ", NUM2 , " = ", CALCULO)
+		CASO OPCAO = 2:
+			CALCULO = (NUM1 - NUM2)
+			IMPRIMA ( NUM1, " - ", NUM2 , " = ", CALCULO)		
+		CASO OPCAO = 3:
+			CALCULO = (NUM1 * NUM2)
+			IMPRIMA ( NUM1, " x ", NUM2 , " = ", CALCULO)
+		CASO OPCAO = 4:
+			SE NUM2=0)ENTAO
+				IMPRIMA("IMPOSSIVEL CALCULAR DIVISAO DE 0")
+			SENAO
+				CALCULO = (NUM1 / NUM2)
+				IMPRIMA ( NUM1, " / ", NUM2 , " = ", CALCULO)
+		CASO OPCAO = 5:
+				IMPRIMA ("SAINDO DA CALCULADORA")
+		DEFAULT:
+			IMPRIMA ("OPÇÃO INVALIDA")
+		FIM_CASO
+	FIM_PARA
+FIM
+		
+		
+		
+		
+		
+		
+
+
+ALGORITMOS 2 = VALE 5PTS
+
+(FEITO EM SALA DE AULA)
+51. Faça um algoritmo que leia uma temperatura em graus Celsius e apresente-a
+convertida em graus Fahrenheit. A fórmula de conversão é: F = (9 * C + 160) / 5, na qual F é a temperatura em Fahrenheit e C é a temperatura em Celsius; 
+---------------------------------------------------
+52. Faça um algoritmo que leia uma temperatura em Fahrenheit e a apresente
+convertida em graus Celsius. A fórmula de conversão é C = (F – 32) * ( 5 / 9), na qual F é a temperatura em Fahrenheit e C é a temperatura em Celsius
+---------------------------------------------------
+53. Faça um algoritmo que leia os valores de COMPRIMENTO, LARGURA e
+ALTURA e apresente o valor do volume de uma caixa retangular. Utilize para o cálculo a fórmula VOLUME = COMPRIMENTO * LARGURA * ALTURA. 
+---------------------------------------------------
+54. Faça um algoritmo que pergunte ao usuário dois números inteiros (Int1 e Int2) e imprima o quociente e o resto da divisão inteira de Int1 por Int2.  
+---------------------------------------------------
+55. O sistema de avaliação de determinada disciplina, é composto por três provas. A primeira prova tem peso 2, a segunda tem peso 3 e a terceira tem peso 5. Faça um algoritmo para calcular a média final de um aluno desta disciplina.
+---------------------------------------------------
+56. Uma empresa de vendas tem três corretores. A empresa paga ao corretor uma comissão calculada de acordo com o valor de suas vendas. Se o valor da venda de um corretor for maior que R$ 50.000.00 a comissão será de 12% do valor vendido. Se o valor da venda do corretor estiver entre R$ 30.000.00 e R$ 50.000.00 (incluindo extremos) a comissão será de 9.5%. Em qualquer outro caso, a comissão será de 7%. Escreva um algoritmo que gere um relatório contendo nome, valor da venda e comissão de cada um dos corretores. O relatório deve mostrar também o total de vendas da empresa.
+
+Escreva um algoritmo que gere um relatório contendo nome, valor da venda e comissão de cada um dos corretores. O relatório deve mostrar também o total de vendas da empresa.
+------------------------------------------------
+corretor1, corretor2, corretor3 = string
+venda1, venda2, venda3, total = real
+comissao1, comissao2, comissao3 = real
+	se (venda > 50000) entao
+		comissao = venda * 0,12
+	senao
+		se (venda >= 30000) e (venda <=50000) entao
+			comissao = venda * 0,095
+		senao 
+			comissao = venda * 0,07
+------------------------------------------------
+ALGORITMO CALCULO_COMISSAO
+VAR
+	corretor1, corretor2, corretor3 = string
+	venda1, venda2, venda3, total = real
+	comissao1, comissao2, comissao3 = real
+INICIO
+	//CALCULO DA COMISSAO DO PRIMEIRO CORRETOR
+	IMPRIMA("Digite o nome do corretor: ")
+	LEIA corretor1
+	IMPRIMA("Digite o valor das vendas desse corretor: ")
+	LEIA venda1
+	se (venda1 > 50000) entao
+		comissao1 = venda1 * 0,12
+	senao
+		se (venda1 >= 30000) e (venda1 <=50000) entao
+			comissao1 = venda1 * 0,095
+		senao 
+			comissao1 = venda1 * 0,07
+		fim_se
+	fim_se
+	
+	//CALCULO DA COMISSAO DO SEGUNDO CORRETOR
+	IMPRIMA("Digite o nome do corretor: ")
+	LEIA corretor2
+	IMPRIMA("Digite o valor das vendas desse corretor: ")
+	LEIA venda2
+	se (venda2 > 50000) entao
+		comissao2 = venda2 * 0,12
+	senao
+		se (venda2 >= 30000) e (venda1 <=50000) entao
+			comissao2 = venda2 * 0,095
+		senao 
+			comissao2 = venda2 * 0,07
+		fim_se
+	fim_se
+	
+	
+	IMPRIMA("Digite o nome do corretor: ")
+	LEIA corretor3
+	IMPRIMA("Digite o valor das vendas desse corretor: ")
+	LEIA venda3
+	se (venda3 > 50000) entao
+		comissao3 = venda3 * 0,12
+	senao
+		se (venda3 >= 30000) e (venda3 <=50000) entao
+			comissao3 = venda3 * 0,095
+		senao 
+			comissao3 = venda3 * 0,07
+		fim_se
+	fim_se
+	
+	total = venda1 + venda2 + venda3
+	
+	IMPRIMA("==========================CALCULO COMISSÃO=====================")
+	IMPRIMA("NOME: ",corretor1, "Valor da Venda: R$", venda1, "Comissão: R$ ")
+	IMPRIMA("NOME: ",corretor2, "Valor da Venda: R$", venda2, "Comissão: R$ ")
+	IMPRIMA("NOME: ",corretor3, "Valor da Venda: R$", venda3, "Comissão: R$ ")
+	IMPRIMA("Total de Vendas: R$", total)
+	IMPRIMA("===============================================================")
+
+FIM
+
+COM ESTRUTURA DE REPETIÇÃO
+
+ALGORITMO CALCULO_COMISSAO
+VAR
+	cont=inteiro
+	corretor = string
+	venda, total = real
+	comissao= real
+INICIO
+	IMPRIMA("==========================CALCULO COMISSÃO=====================")
+	PARA cont de 1 até 3 FAÇA
+		IMPRIMA("Digite o nome do corretor: ")
+		LEIA corretor
+		IMPRIMA("Digite o valor das vendas desse corretor: ")
+		LEIA venda
+		total=0
+		se (venda > 50000) entao
+			comissao = venda * 0,12
+		senao
+			se (venda >= 30000) e (venda <=50000) entao
+				comissao = venda * 0,095
+			senao 
+				comissao = venda * 0,07
+			fim_se
+		fim_se
+		IMPRIMA(("NOME: ",corretor, "Valor da Venda: R$", venda, "Comissão: R$ ")
+		IMPRIMA("===============================================================")
+		total = total + venda
+	FIM_PARA
+	IMPRIMA("Total de Vendas: R$", total)
+	IMPRIMA("===============================================================")
+FIM
+		
+		==========================CALCULO COMISSÃO=====================
+		Digite o nome do corretor: João Pedro	
+		Digite o valor das vendas desse corretor: R$ 135000,00
+	
+		NOME: João Pedro  Valor da Venda: R$ 135000,00   Comissão: R$ 16.200,00
+		===============================================================
+		Digite o nome do corretor: Lucas Gabriel	
+		Digite o valor das vendas desse corretor: R$ 45000,00
+		
+		NOME: Lucas Gabriel  Valor da Venda: R$ 45000,00   Comissão: R$ 4.275,00
+		===============================================================
+		Digite o nome do corretor: Salomão Cristiano
+		Digite o valor das vendas desse corretor: R$ 25000,00
+		
+		NOME: Salomão Cristiano  Valor da Venda: R$ 2500,00   Comissão: R$ 1.750,00
+		===============================================================
+		Total de Vendas: R$ 205.000,00
+		===============================================================
