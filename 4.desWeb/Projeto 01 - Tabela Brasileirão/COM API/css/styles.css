@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.outer-container {
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.7);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a{
+	color: white;
+}
+
+
+a:visited{
+	color: lightgreen;	
+}
+
+a:hover{
+	background-color:lightgreen;
+	color: darkgreen;
+	text-decoration:none;	
+}
+
+.apifutebol-tabela {
+    height: 550px; /* ou qualquer outra altura desejada em pixels ou porcentagem */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
+	margin: 20px auto;
+    padding: 20px;
+    background-color: lightgreen;
+	opacity: 0.8;
+    border-radius: 10px;
+}
+
+.rodape-container {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

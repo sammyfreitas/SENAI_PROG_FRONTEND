@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.image-container {
+  position: relative;
+  max-width: 100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  background-size: cover;
+  animation: fade 15s infinite;
+}
+
+#img1 {
+  background-image: url('./imagens/imagem1.jpg');
+  animation-delay: 0s;
+}
+
+#img2 {
+  background-image: url('./imagens/imagem2.jpg');
+  animation-delay: 5s;
+}
+
+#img3 {
+  background-image: url('./imagens/imagem3.jpg');
+  animation-delay: 10s;
+}
+
+@keyframes fade {
+  0%, 25% {
+    opacity: 1;
+  }
+  33.33%, 58.33% {
+    opacity: 0;
+  }
+  66.66%, 91.66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

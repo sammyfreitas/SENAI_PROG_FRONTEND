@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas - Prof. Anthony Freitas</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	<div class="degrade">
+		<div class="outer-container">
+			<div class="social-icons">
+				<a href="" target="_blank"><i class="fas fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/tony-s-freitas/" target="_blank"> <i class="fab fa-linkedin"></i></a>
+				<a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><i class="fas fa-globe"></i></a>
+				<a href="https://github.com/sammyfreitas" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://www.instagram.com/anthony_tijuduke" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="mailto:tonysdefreitas@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+				<a href="https://wa.me/5521975287327" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+			</div>
+		</div>
+		<div class="conversorMoedas">
+			<h2 align="center">Conversor de Moedas</h2>
+			<h4 align="center">API pública <a href="https://www.exchangerate-api.com/" target="_blank"> "Exchange Rate"</a></h4>
+			<label for="valor">Digite o valor em reais:</label>
+			<input type="number" id="valor" placeholder="Digite o valor em reais">
+			<label for="moeda">Escolha a moeda:</label>
+			
+			<select id="moeda">
+				<option value="USD">Dólar Americano (USD)</option>
+				<option value="CAD">Dólar Canadense (CAD)</option>
+				<option value="MXN">Peso Mexicano (MXN)</option>
+				
+				<option value="EUR">Euro (EUR)</option>
+				<option value="GBP">Libra Esterlina (GBP)</option>
+				
+				<option value="RUB">Rublo Russo (RUB)</option>
+				<option value="CNY">Yuan Renminbi Chinês (CNY)</option>
+				<option value="JPY">Iene Japonês (JPY)</option>
+				<option value="KRW">Won Coreano (KRW)</option>
+				
+				<option value="AED">UAE Dirham Emirados Árabes (AED)</option>
+				<option value="SGD">Dólar de Cingapura(SGD)</option>
+				<option value="QAR">Qatari Rial de Qatar(QAR)</option>
+				
+				<option value="BOB">Boliviano (BOB)</option>
+				<option value="VES">Bolivar Soberano Venezuelano (VES)</option>
+				<option value="PYG">Guarani Paraguaio (PYG)</option>
+				<option value="PEN">Nuevo Sol Peruano (PEN)</option>
+				<option value="ARS">Peso Argentino (ARS)</option>
+				<option value="CLP">Peso Chileno(CLP)</option>
+				<option value="COP">Peso Colombiano (COP)</option>
+				<option value="UYU">Peso Uruguaio(UYU)</option>
+										
+			</select>
+			<br>
+		
+		<div class="btns">
+			<button id="convertButton">Converter</button>
+			<button onclick="Clear()">Limpar</button> 
+		</div>
+		
+		<div class="result-container">
+			<div id="result"></div>
+		</div>
+	</div>
+	
+	<div class="result-container">
+		<div id="result"></div>
+	</div>
+	
+</div>
+  
+	<footer>
+        Desenvolvido por <a href="https://github.com/sammyfreitas/portfolioSite" target="_blank">Anthony Freitas</a>, todos os direitos reservados - 2023.
+    </footer>
+</body>
+	<script src="./js/script.js"></script>
+
+</html>
+

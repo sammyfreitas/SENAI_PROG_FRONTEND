@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/*Cola com fontes mais bacanas
+https://fonts.google.com/ 
+Aladin
+Fontes serifadas	: Josefin Sans, Dosis 
+Fontes não serifadas: Roboto, Preahvihear, Mina, Rubik Bubbles
+Cursivas			: Caveat, Pacifico, Mynerve, Dancing Script, Borel
+Pixelada			: Silkscreen, Wallpoet
+*/
+
+body {
+	/*PARA O DEGRADE - NO LUGAR DE 45DEG É POSSIVEL COLOCAR TOP, BOTTOM, LEFT E RIGHT PARA DETERMINAR DE ONDE PARA ONDE VAI SER O DEGRADÊ*/
+	background-image: linear-gradient(45deg, rgb(127,79,190), rgb(79,42,165));
+	background-image: url(" "); /*ENDEREÇO LOCAL OU NA INTERNET*/
+	background-position: center center; /*OCUPAR A PAGINA INTEIRA*/
+    background-repeat: no-repeat; /*IMAGEM NÃO SE REPETE SE FOR MENOR*/
+    background-attachment: fixed; /*IMAGEM FIXA NO FUNDO DA HP*/
+    background-size: cover; /*OCUPAR A PAGINA INTEIRA*/
+	
+}
+
+img {
+	
+}
+
+/* AO COLOCAR : É POSSÍVEL ESTILIZAR A CARACTERISTICA COMO:
+	ACTIVE, VISITED, HOVER E ETC */
+img:hover {
+	
+}
+
+button{
+	
+}
+
+.outer-container{
+	
+}
+
+.form-container{
+	
+}
+
+.input-container{
+	
+}
+
+.info-container{
+	
+}
+
+/* A IMAGEM VAI RECEBER ESTILIZAÇÃO EXCLUSIVA PARA INFO */
+.info-container img{
+	
+}
+
+/* O BOTÃO VAI RECEBER ESTILIZAÇÃO EXCLUSIVA PARA INFO */
+.info-container button{
+	
+}
+
+
+/* ESTILIZAÇÃO DOS HIPERLINKS */
+a:visited {
+    color: #C4A487;
+}
+
+a:hover {
+    color: #8B735B;
+    text-decoration: none;
+}
+
+/* ESTILIZAÇÃO DOS ICONES DAS REDES SOCIAIS */
+.social-icons {
+    border-radius: 15px;
+    background-color: rgba(254, 247, 231, 0.8);
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #8B735B;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+/* ESTILIZAÇÃO DO RODAPÉ */
+.rodape-container {
+    margin-top: 80px;
+    text-align: center;
+	font-family: 'Roboto';
+    font-size: medium;
+	color: #8B735B;
+    border-radius: 15px;
+    background-color: rgba(254, 247, 231, 0.8);
+    padding: 20px;
+}
