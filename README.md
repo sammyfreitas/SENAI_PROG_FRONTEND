@@ -1,6 +1,6 @@
 # Curso de Qualificação Profissional de Desenvolvedor Front-End
 
-🚀 **Prof. Anthony Samuel Freitas**  
+🚀 **Prof. Anthony Samuel de Freitas**  
 [🌐 Portfolio](https://sammyfreitas.github.io/portfolioSite/) | [✉️ Email](mailto:anthony.freitas@docente.senai.br) | [GitHub](https://github.com/sammyfreitas)
 
 O curso de Qualificação Profissional de Desenvolvedor Front-End tem como objetivo principal capacitar os participantes no desenvolvimento de competências essenciais para programar sistemas utilizando as principais tecnologias do front-end. Ao final do curso, os alunos estarão aptos a criar interfaces visualmente atrativas e acessíveis, garantindo uma experiência amigável ao usuário.
